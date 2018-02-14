@@ -1,0 +1,70 @@
+page-home {
+
+  #changestatus .item-inner{
+    border-bottom: 0px;
+  }
+
+  .scroll-content{
+    background-color: white;
+  }
+
+  ion-grid{
+    background-color: white;
+  }
+
+  fixed-content{
+      background-color: #000;
+  }
+
+  #header-card{
+    background-color: white;
+    h1{
+      color: #acc41e;
+      font-size: 2.5rem;
+    }
+    p{
+      color: #acc41e;
+      font-size: 1.5rem;
+    }
+  }
+
+  #ordenes-title{
+    color: black;
+    font-size: 2.5rem;
+  }
+
+  #services{
+    h1{
+      color: #acc41e;
+      font-size: 2.5rem;
+    }
+    li{
+      color: #acc41e;
+      font-size: 1.5rem;
+      list-style: none;
+    }
+
+    ion-card-content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #map1{
+      height: 150px;
+      width: 100%;
+    }
+    #map2{
+      height: 150px;
+      width: 100%;
+    }
+  }
+
+  .map_c{
+    height: 150px;
+    width: 50%;
+  }
+
+  .order_controls{
+    width: 50%;
+  }
+}

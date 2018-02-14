@@ -1,0 +1,56 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <!-- <ion-navbar hide-nav-bar>
+  </ion-navbar> -->
+
+</ion-header>
+
+
+<ion-content disable-scroll>
+  <ion-grid>
+    <ion-row align-items:center margin wrap>
+      <ion-col col-12 text-center>
+        <img src="assets/imgs/carlab_logo.png">
+      </ion-col>
+      <ion-col col-12 text-center>
+        <p>Valoramos tu tiempo, cuidamos tu auto.</p>
+      </ion-col>
+    </ion-row>
+      <form [formGroup]="user" (ngSubmit)="loginWithEmail()" text-center >
+      <ion-row justify-content-center>
+        <ion-col col-10 text-center>
+          <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="email" formControlName="email"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col col-10 text-center>
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col col-10 text-center margin-top margin-bottom>
+          <button ion-button icon-start color="carlabC" block [disabled]="!user.valid" type="submit" >
+            <ion-icon name="md-mail" ></ion-icon>
+            Login
+          </button>
+        </ion-col>
+      </ion-row>
+      </form>
+      <!-- <ion-row justify-content-center>
+        <ion-col col-10 text-center margin-top margin-bottom text-center>
+          <button ion-button icon-start   block (click)="facebookLogin()">
+            <ion-icon name="logo-facebook"></ion-icon>
+            Inicia sesión
+          </button>
+        </ion-col>
+      </ion-row> -->
+  </ion-grid>
+</ion-content>

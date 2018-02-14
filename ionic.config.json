@@ -1,0 +1,8 @@
+{
+  "name": "cl_operator",
+  "app_id": "820d177f",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

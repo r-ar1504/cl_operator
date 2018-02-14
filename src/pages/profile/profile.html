@@ -1,0 +1,44 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{worker.name}} {{worker.last_name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+        <form [formGroup]="user" (ngSubmit)="updateUser()" text-center >
+        <ion-row justify-content-center>
+          <ion-col col-10 text-left>
+            <ion-item>
+              <ion-label floating>Email</ion-label>
+              <ion-input type="email" formControlName="email" value="{{worker.email}}">jose@carlab.com</ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-10 text-left>
+            <ion-item>
+              <ion-label floating>Celular</ion-label>
+              <ion-input type="text" formControlName="phone" value="{{worker.phone}}">8712198235</ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-10 text-center margin-top margin-bottom>
+            <button ion-button  color="carlabC" block  type="submit" >
+              Actualizar Datos
+            </button>
+          </ion-col>
+        </ion-row>
+        </form>
+    </ion-row>
+    <ion-row>
+      <h1>Puntuación</h1>
+    </ion-row>
+    <ion-row justify-content-center>
+      <h1>{{worker.rating}}</h1>
+    </ion-row>
+  </ion-grid>
+</ion-content>

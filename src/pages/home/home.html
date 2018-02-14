@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar color="carlabC">
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Panel de servicios</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content >
+  <ion-grid no-padding>
+
+    <ion-row *ngIf="worker">
+      <ion-col text-center>
+        <div>
+          <h1 padding> Bienvenido {{worker.name}},</h1>
+          <p>Tu estatus de trabajo es:</p>
+          <div class="worker-state" >
+              <button ion-button color="carlabC" *ngIf="toggle_active" [disabled]="toggle_active==false" (click)="testPusher()">Activo</button>
+              <button ion-button color="danger"  *ngIf="toggle_active!=true" [disabled]="toggle_active==true">Inactivo</button>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col>
+          <ion-item padding id="changestatus">
+            <ion-label>Cambiar estatus</ion-label>
+            <ion-toggle margin [(ngModel)]="toggle_active" (ionChange)="checkStatus()" color="dark"></ion-toggle>
+          </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <ion-list text-center >
+          <h1 id="ordenes-title">Ordenes activas:</h1>
+          <div  *ngFor="let order of orders">
+          <ion-card id="services"*ngIf="order.status!= 1 || order.status!= 4" >
+            <ion-card-header text-left >
+
+              <h1>Orden #{{order.id}}</h1>
+
+            </ion-card-header>
+
+            <ion-card-content>
+              <div id="map{{order.id}}" style="height: 150px; width: 100%;">
+
+
+              </div>
+              <div class="order_controls">
+                <div class="order_buttons">
+
+                </div>
+                <div class="order_info">
+                  <ul text-left no-padding>
+                    <li>Vehiculo: <br> {{order.details}}</li>
+                    <li>Placas: {{order.car_plate}}</li>
+                    <li>{{order.service_date}}</li>
+                    <li>
+                      <button *ngIf="order.status==1" ion-button color="carlabC" (click)="startService(order.id)">Iniciar</button>
+                      <button *ngIf="order.status==2" ion-button color="carlabC" (click)="startWash(order.id)">Lavado</button>
+                      <button *ngIf="order.status==3"ion-button color="danger" (click)="endService(order.id)">Terminar</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </ion-card-content>
+
+          </ion-card>
+          </div>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

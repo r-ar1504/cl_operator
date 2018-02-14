@@ -1,0 +1,106 @@
+{
+  "ionic-plugin-keyboard": {
+    "source": {
+      "type": "registry",
+      "id": "ionic-plugin-keyboard@~2.2.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1.3.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-device": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-device@1.1.4"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-splashscreen": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-splashscreen@~4.0.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-ionic-webview": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ionic-webview@^1.1.11"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-facebook4": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-facebook4@^1.9.1"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "961293254026477",
+      "APP_NAME": "Carlab_operator"
+    }
+  },
+  "cordova-plugin-googlemaps": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-googlemaps"
+    },
+    "is_top_level": true,
+    "variables": {
+      "API_KEY_FOR_ANDROID": "AIzaSyAF-5PKV5xQmE16KZnfc6EJVXzdmWB54PE",
+      "API_KEY_FOR_IOS": "AIzaSyCGXty5mptvwLMnHtlg9uRme3srfBG9vx4"
+    }
+  },
+  "cordova-plugin-geolocation": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-geolocation@4.0.1"
+    },
+    "is_top_level": true,
+    "variables": {
+      "GEOLOCATION_USAGE_DESCRIPTION": "Encontrar servicios"
+    }
+  },
+  "cordova-plugin-native-spinner": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-native-spinner"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-local-notification": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-local-notification@^0.9.0-beta.2"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-badge": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-badge@>=0.8.5"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-background-mode": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-background-mode"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

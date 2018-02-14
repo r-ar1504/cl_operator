@@ -1,0 +1,26 @@
+page-register {
+    font-size: 1.9rem;
+    ion-grid{
+      width: 100%;
+    }
+    ion-content{
+      background: url('../assets/imgs/carlab_loginBG.jpg');
+      background-size: cover;
+      ion-label.label.label-md{
+        color: white;
+      }
+      ion-label.label.label-ios{
+        color: white;
+      }
+      ion-input,.input-has-focus,.input-has-value{
+        color:white;
+      }
+      .item-label-floating{
+        background-color: transparent;
+      }
+      img{
+          width: 120px;
+        }
+
+      }
+}

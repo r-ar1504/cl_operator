@@ -1,0 +1,6598 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://ionicframework.com/docs/native/google-maps/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style data-visibility="">ionic-button,ionic-newsletter-signup{visibility:hidden}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="./Ionic Native - Google Maps_files/css" rel="stylesheet">
+<link href="./Ionic Native - Google Maps_files/styles.css" rel="stylesheet">
+
+
+  <title>Ionic Native - Google Maps</title>
+
+
+<meta name="author" content="Drifty">
+<meta name="description" content="Ionic is the app platform for web developers. Build amazing mobile, web, and desktop apps all with one shared code base and open web standards">
+<meta name="keywords" content="html5,javascript,mobile,drifty,ionic,hybrid,phonegap,cordova,native,ios,android,angularjs">
+<link rel="canonical" href="https://ionicframework.com/docs/native/google-maps/">
+
+<!-- Social: Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ionicframework">
+<meta name="twitter:creator" content="ionicframework">
+<meta name="twitter:title" content="Ionic Framework">
+<meta name="twitter:description" content="Ionic is the app platform for web developers. Build amazing mobile, web, and desktop apps all with one shared code base and open web standards">
+<meta name="twitter:image:src" content="https://ionicframework.com/img/meta/ionic-link-img.jpg">
+
+<!-- Social: Facebook / Open Graph -->
+<meta property="fb:app_id" content="1321836767955949">
+<meta property="og:url" content="https://ionicframework.com/docs/native/google-maps/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ionic Framework">
+<meta property="og:image" content="https://ionicframework.com/img/meta/ionic-link-img.jpg">
+<meta property="og:description" content="Ionic is the app platform for web developers. Build amazing mobile, web, and desktop apps all with one shared code base and open web standards">
+<meta property="og:site_name" content="Ionic Framework">
+<meta property="article:publisher" content="https://www.facebook.com/ionicframework">
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://ionicframework.com/img/meta/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ionicframework.com/img/meta/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ionicframework.com/img/meta/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ionicframework.com/img/meta/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ionicframework.com/img/meta/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ionicframework.com/img/meta/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ionicframework.com/img/meta/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ionicframework.com/img/meta/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ionicframework.com/img/meta/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://ionicframework.com/img/meta/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="https://ionicframework.com/img/meta/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://ionicframework.com/img/meta/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://ionicframework.com/img/meta/favicon-192x192.png" sizes="192x192">
+<link rel="manifest" href="https://ionicframework.com/manifest.json">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/img/meta/ms-icon-70x70.png">
+<meta name="msapplication-TileImage" content="/img/meta/ms-icon-144x144.png">
+<meta name="theme-color" content="#4c8fff">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+  <script type="text/javascript" async="" src="./Ionic Native - Google Maps_files/3af7413247f5067b13df320689ad04c045f97e14.2.js"></script><script type="text/javascript" async="" src="./Ionic Native - Google Maps_files/i.js"></script><script type="text/javascript" async="" src="./Ionic Native - Google Maps_files/ga.js"></script><script async="" src="./Ionic Native - Google Maps_files/branch-latest.min.js"></script><script src="./Ionic Native - Google Maps_files/ionic-site-components.egtgfe6c.js" data-path="/stencil/ionic-site-components/" data-core="ionic-site-components.egtgfe6c.js"></script><script src="chrome-extension://ocggccaacacpienfcgmgcihoombokbbj/pages/client/livestartpage-message-add.js"></script></head>
+  <body id="docs-page-google-maps" class="v2 docs fluid page-google-maps ng-scope" data-spy="scroll" data-offset="100" data-target="#components-index" ng-app="IonicSite">
+    <noscript>
+      &lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKMGCBC"
+              style="display:none;visibility:hidden"
+              height="0" 
+              width="0" &gt;&lt;/iframe&gt;
+    </noscript>
+    <!-- <div id="snap-bar">
+      <img src="/img/net-neutrality-loading.png" width="16" class="loading"/>
+      Speak up for a free and open internet. 
+      <a href="https://www.battleforthenet.com" target="_blank">
+        <b>Act now to save Net Neutrality</b>
+        <i class="ion-md-arrow-forward"></i>
+      </a>
+    </div> -->
+    
+      <nav class="navbar navbar-default" id="">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" id="collapse-toggle" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="ion-md-more"></i>
+      </button>
+      <button type="button" class="sidebar-toggle collapsed" id="sidebar-toggle">
+        <span class="sr-only">Toggle sidebar</span>
+        <i class="ion-md-menu"></i>
+        <i class="ion-md-close"></i>
+      </button>
+      <a class="navbar-brand logo" href="https://ionicframework.com/">
+        <img src="./Ionic Native - Google Maps_files/ionic-docs-icon.png" id="ionic-docs-logo">
+        <img src="./Ionic Native - Google Maps_files/ionic-docs-icon-back.png" id="ionic-docs-back">
+      </a>
+      <a class="navbar-brand" href="https://ionicframework.com/docs/v2">
+        
+        <img src="./Ionic Native - Google Maps_files/ionic-docs-type.png" id="ionic-docs-text">
+        
+      </a>
+      
+      <ul class="version">
+        <li class="dropdown">
+          <a href="https://ionicframework.com/docs/native/google-maps/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="https://ionicframework.com/docs/native/google-maps/#" class="active">
+                Current Framework Docs <i class="ion-ios-checkmark"></i>
+              </a>
+            </li>
+            <li><a href="https://ionicframework.com/docs/v1">v1 Framework Docs</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      
+      <form class="navbar-form navbar-left ng-pristine ng-valid" id="header-search" role="search" data-searchpos="header">
+        <div class="form-group">
+          <input type="text" class="form-control search-input ng-pristine ng-untouched ng-valid ng-empty" placeholder="Search" data-searchpos="header" ng-model="searchTerm">
+        </div>
+      </form>
+      
+      <ul class="nav navbar-nav navbar-center">
+        <!-- <li class="dropdown">
+  <a href="#"
+     class="dropdown-toggle"
+     data-toggle="dropdown"
+     role="button"
+     aria-haspopup="true"
+     aria-expanded="false">
+    Open source
+  </a>
+  <ul class="dropdown-menu">
+    <li>
+      <a href="/framework" class="framework">
+        <strong>Ionic Framework</strong>
+        The popular open source SKD, built for developers.
+      </a>
+    </li>
+    <li>
+      <a href="https://ionicons.com/" class="ionicons">
+        <strong>Ionicons</strong>
+        Our 900+ open source system icon pack.
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://stenciljs.com" class="stencil">
+        <strong>Stencil <span class="tag">New</span></strong>
+        Resuable, web standards component generator.
+      </a>
+    </li>
+  </ul>
+</li> -->
+
+<li><a href="https://ionicframework.com/framework">
+  Framework</a></li>
+<li>
+  <a href="https://ionicframework.com/pro">Products</a></li>
+
+<!-- <li class="dropdown products">
+  <a href="/pro"
+     class="dropdown-toggle"
+     aria-haspopup="true"
+     aria-expanded="false">
+    Products
+  </a>
+  <ul class="dropdown-menu">
+    <li>
+      <a href="/pro" class="pro">
+        <strong>Ionic Pro</strong>
+        The premier product suite for serious app creators.
+      </a>
+    </li>
+    <li>
+      <a href="/pro/view" class="view">
+        <strong>View App</strong>
+        The live preview app for device testing &amp; sharing.
+      </a>
+    </li>
+    <li>
+      <a href="/pro/deploy" class="deploy">
+        <strong>Deploy</strong>
+        Push hot code updates live to production apps.
+      </a>
+    </li>
+    <li>
+      <a href="/pro/package" class="package">
+        <strong>Package</strong>
+        Compile and publish native binaries in the cloud.
+      </a>
+    </li>
+    <li>
+      <a href="/pro/monitor" class="monitor">
+        <strong>Monitor</strong>
+        Ionic app error monitoring and log tracking.
+      </a>
+    </li>
+  </ul>
+</li> -->
+
+<li class="dropdown developers">
+  <a href="https://ionicframework.com/docs/native/google-maps/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Developers</a>
+  <ul class="dropdown-menu">
+    <li class="split">
+      <ul>
+        <li class="title"><a href="https://ionicframework.com/docs">
+          <i class="ion-md-arrow-forward"></i>Framework Docs</a></li>
+        <li><a href="https://ionicframework.com/getting-started">Setup &amp; Installation</a></li>
+        <li><a href="https://ionicframework.com/docs/components/">UI Components</a></li>
+        <li><a href="https://ionicframework.com/docs/api/">API Reference</a></li>
+        <li><a href="https://ionicframework.com/docs/native/">Native Plugins</a></li>
+        <li><a href="https://ionicframework.com/docs/developer-resources/">Dev Resources</a></li>
+      </ul>
+      <ul>
+        <li class="title"><a href="https://ionicframework.com/docs/pro">
+          <i class="ion-md-arrow-forward"></i>Pro Docs</a></li>
+        <li><a href="https://ionicframework.com/docs/pro/beta-testing.html">View app</a></li>
+        <li><a href="https://ionicframework.com/docs/pro/package/">Package</a></li>
+        <li><a href="https://ionicframework.com/docs/pro/live-deploy/">Live Deploy</a></li>
+        <li><a href="https://ionicframework.com/docs/pro/error-monitoring.html">Monitoring</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="https://ionicframework.com/developers/" class="forward">
+        <i class="ion-md-arrow-forward"></i>Developer Center
+      </a>
+    </li>
+  </ul>
+</li>
+
+<li class="dropdown businesses">
+  <a href="https://ionicframework.com/docs/native/google-maps/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Businesses</a>
+  <ul class="dropdown-menu">
+    <!-- <li><a href="/customers" class=""></a></li> -->
+    <li><a href="https://ionicframework.com/resources" class="resources">Resource Center</a></li>
+    <li><a href="https://ionicframework.com/enterprise" class="enterprise">Enterprise</a></li>
+    <li><a href="https://ionicframework.com/demo" class="demo">Request a demo</a></li>
+    <li><a href="https://ionicframework.com/sales" class="sales">Contact Sales</a></li>
+    <li><a href="https://ionicframework.com/about" class="about">About Ionic</a></li>
+  </ul>
+</li>
+
+<li class="dropdown support">
+  <a href="https://ionicframework.com/docs/native/google-maps/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support</a>
+  <ul class="dropdown-menu">
+    <li><a href="https://forum.ionicframework.com/" class="forum">Community Forum</a></li>
+    <li><a href="https://ionicframework.com/support" class="support">Technical Support</a></li>
+    <li><a href="https://ionicframework.com/trusted-partners" class="trusted-partners">Trusted Partners</a></li>
+    <li><a href="https://ionicframework.com/contact" class="contact">Contact Us</a></li>
+  </ul>
+</li>
+
+<li class="dropdown ecosystem">
+  <a href="https://ionicframework.com/docs/native/google-maps/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ecosystem</a>
+  <ul class="dropdown-menu">
+    <li class="hide-gt-md"><a href="https://blog.ionicframework.com/" class="blog">Ionic Blog</a></li>
+    <!--<li><a href="" class="community">Community Hub</a></li> -->
+    <li><a href="https://market.ionicframework.com/" class="market">Ionic Market</a></li>
+    <!-- <li><a href="https://jobs.ionicframework.com" class="jobs">Job Board</a></li> -->
+    <li><a href="https://shop.ionicframework.com/" class="shop">Swag Shop</a></li>
+    <li class="divider"></li>
+    <li><a href="https://twitter.com/IonicFramework" class="twitter">Twitter</a></li>
+    <li><a href="http://ionicworldwide.herokuapp.com/" class="slack">Slack</a></li>
+    <li><a href="https://github.com/ionic-team/" class="github">GitHub</a></li>
+  </ul>
+</li>
+
+<li class="hide-lt-lg"><a href="https://blog.ionicframework.com/" class="blog">Blog</a></li>
+
+<li class="sm-hide">
+  <a href="https://ionicframework.com/pro/pricing">Pricing</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="sm-hide">
+          <a href="https://apps.ionic.io/login" class="header-btn">Log in</a>
+        </li>
+        <li class="header-btn-white">
+          <a href="https://apps.ionic.io/signup">Sign up</a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    
+
+    <div class="docs-container">
+  <nav class="side-nav affix" id="side-nav" data-spy="affix" data-offset-top="38">
+    <form class="form-group search ng-pristine ng-valid" role="search">
+      <input type="text" class="form-control search-input ng-pristine ng-untouched ng-valid ng-empty" placeholder="Search" data-searchpos="sidebar" ng-model="searchTerm">
+    </form>
+    
+      <ul ng-controller="DocsNavCtrl" class="native-docs ng-scope">
+  <li class="back-to-main">
+    <a href="https://ionicframework.com/docs/">Back to Main Docs</a>
+  </li>
+  <li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/">Overview</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/browser.html">Browser Usage</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/3d-touch/">3D Touch</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/action-sheet/">Action Sheet</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/admob-free/">AdMob Free</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/admob-pro/">AdMob Pro <span class="paid">Paid</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/alipay/">Alipay</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/android-exoplayer/">Android ExoPlayer</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/android-fingerprint-auth/">Android Fingerprint Auth</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/android-full-screen/">Android Full Screen</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/android-permissions/">Android Permissions</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/app-availability/">App Availability</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/app-minimize/">App Minimize</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/app-preferences/">App Preferences</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/app-rate/">App Rate</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/app-update/">App Update</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/app-version/">App Version</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/apple-pay/">Apple Pay</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/appodeal/">Appodeal</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/autostart/">Autostart</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/background-fetch/">Background Fetch</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/background-geolocation/">Background Geolocation</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/background-mode/">Background Mode</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/badge/">Badge</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/barcode-scanner/">Barcode Scanner</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/base64-to-gallery/">Base64 To Gallery</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/battery-status/">Battery Status</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/ble/">BLE</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/bluetooth-serial/">Bluetooth Serial</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/braintree/">Braintree</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/brightness/">Brightness</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/broadcaster/">Broadcaster</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/browser-tab/">Browser Tab</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/calendar/">Calendar</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/call-number/">Call Number</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/camera/">Camera</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/card-io/">Card IO</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/clipboard/">Clipboard</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/code-push/">Code Push</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/contacts/">Contacts</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/couchbase-lite/">Couchbase Lite</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/crop/">Crop</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/date-picker/">Date Picker</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/db-meter/">DB Meter</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/deeplinks/">Deeplinks</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/device/">Device</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/device-accounts/">Device Accounts</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/device-feedback/">Device Feedback</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/device-motion/">Device Motion</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/device-orientation/">Device Orientation</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/diagnostic/">Diagnostic</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/dialogs/">Dialogs</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/dns/">DNS</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/document-viewer/">Document Viewer</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/email-composer/">Email Composer</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/estimote-beacons/">Estimote Beacons</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/extended-device-information/">Extended Device Information</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/facebook/">Facebook</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/fcm/">FCM</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/file/">File</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/file-chooser/">File Chooser</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/file-encryption/">File Encryption</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/file-opener/">File Opener</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/file-path/">File Path</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/file-transfer/">File Transfer</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/fingerprint-aio/">Fingerprint AIO</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/flashlight/">Flashlight</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/flurry-analytics/">Flurry Analytics</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/ftp/">FTP</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/geofence/">Geofence</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/geolocation/">Geolocation</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/globalization/">Globalization</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/google-analytics/">Google Analytics</a>
+</li>
+<li class="capitalize active">
+  <a href="https://ionicframework.com/docs/native/google-maps/">Google Maps</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/google-play-games-services/">Google Play Games Services</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/google-plus/">Google Plus</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/gyroscope/">Gyroscope</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/header-color/">Header Color</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/health/">Health</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/health-kit/">Health Kit</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/http/">HTTP</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/httpd/">Httpd</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/ibeacon/">IBeacon</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/image-picker/">Image Picker</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/image-resizer/">Image Resizer</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/in-app-browser/">In App Browser</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/in-app-purchase/">In App Purchase</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/in-app-purchase-2/">In App Purchase 2</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/index-app-content/">Index App Content</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/insomnia/">Insomnia</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/instagram/">Instagram</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/intel-security/">Intel Security</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/intercom/">Intercom</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/is-debug/">Is Debug</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/jins-meme/">Jins Meme</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/keyboard/">Keyboard</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/keychain/">Keychain</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/keychain-touch-id/">Keychain Touch Id</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/launch-navigator/">Launch Navigator</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/launch-review/">Launch Review</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/linkedin/">LinkedIn</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/local-notifications/">Local Notifications</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/location-accuracy/">Location Accuracy</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/market/">Market</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/media/">Media</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/media-capture/">Media Capture</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/mixpanel/">Mixpanel</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/mobile-accessibility/">Mobile Accessibility</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/ms-adal/">MS ADAL</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/music-controls/">Music Controls</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/native-audio/">Native Audio</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/native-geocoder/">Native Geocoder</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/native-keyboard/">Native Keyboard <span class="paid">Paid</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/native-page-transitions/">Native Page Transitions</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/native-storage/">Native Storage</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/network/">Network</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/network-interface/">Network Interface</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/nfc/">NFC</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/onesignal/">OneSignal</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/open-native-settings/">Open Native Settings</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/paypal/">PayPal</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/pedometer/">Pedometer</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/phonegap-local-notification/">Phonegap Local Notification</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/photo-library/">Photo Library</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/photo-viewer/">Photo Viewer</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/pin-check/">Pin Check</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/pin-dialog/">Pin Dialog</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/power-management/">Power Management</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/printer/">Printer</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/pro/">Pro</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/push/">Push</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/qqsdk/">QQSDK</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/qr-scanner/">QR Scanner</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/safari-view-controller/">Safari View Controller</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/screen-orientation/">Screen Orientation</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/screenshot/">Screenshot</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/secure-storage/">Secure Storage</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/serial/">Serial</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/shake/">Shake</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/sim/">Sim</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/sms/">SMS</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/social-sharing/">Social Sharing</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/speech-recognition/">Speech Recognition</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/spinner-dialog/">Spinner Dialog</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/splash-screen/">Splash Screen</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/sqlite/">SQLite</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/sqlite-porter/">SQLite Porter</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/status-bar/">Status Bar</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/stepcounter/">Stepcounter</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/streaming-media/">Streaming Media</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/stripe/">Stripe</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/taptic-engine/">Taptic Engine</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/text-to-speech/">Text To Speech</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/texthelper/">TextHelper</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/themeable-browser/">Themeable Browser</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/toast/">Toast</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/touch-id/">Touch ID</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/twitter-connect/">Twitter Connect</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/uid/">Uid</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/unique-device-id/">Unique Device ID</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/urihelper/">UriHelper</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/user-agent/">User Agent</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/vibration/">Vibration</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/video-editor/">Video Editor</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/video-player/">Video Player</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/youtube-video-player/">Youtube Video Player</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/zbar/">ZBar</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/zeroconf/">Zeroconf</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/zip/">Zip</a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/backlight/">Backlight <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/base64/">Base64 <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/camera-preview/">Camera Preview <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/firebase/">Firebase <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/firebase-analytics/">Firebase Analytics <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/firebase-dynamic-links/">Firebase Dynamic Links <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/hotspot/">Hotspot <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/hypertrack/">HyperTrack <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/native-ringtones/">Native Ringtones <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/navigation-bar/">Navigation Bar <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/pinterest/">Pinterest <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/regula-document-reader/">Regula Document Reader <span class="paid">Paid</span> <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/rollbar/">Rollbar <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/video-capture-plus/">Video Capture Plus <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/web-intent/">Web Intent <span class="beta">β</span></a>
+</li>
+<li class="capitalize ">
+  <a href="https://ionicframework.com/docs/native/wheelselector-plugin/">WheelSelector Plugin <span class="beta">β</span></a>
+</li>
+
+</ul>
+
+    
+  </nav>
+  
+  <main>
+    <h1 class="api-title">Google Maps</h1>
+
+<p><a class="improve-v2-docs" href="http://github.com/ionic-team/ionic-native/edit/master/src/@ionic-native/plugins/google-maps/index.ts#L777">
+  Improve this doc
+</a></p>
+
+<p>This plugin uses the native Google Maps SDK
+Note: As of Ionic native 4.0, this using the 2.0 version of the google maps plugin. Please make sure your plugin is updated</p>
+
+<p>Repo:
+  <a href="https://github.com/mapsplugin/cordova-plugin-googlemaps">
+    https://github.com/mapsplugin/cordova-plugin-googlemaps
+  </a>
+</p>
+
+<h2><a class="anchor" name="installation" href="https://ionicframework.com/docs/native/google-maps/#installation"></a>Installation</h2>
+<ol class="installation">
+  <li>Install the Cordova and Ionic Native plugins:<br>
+    <pre><code class="nohighlight">$ ionic cordova plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="YOUR_ANDROID_API_KEY_IS_HERE" --variable API_KEY_FOR_IOS="YOUR_IOS_API_KEY_IS_HERE"
+$ npm install --save @ionic-native/google-maps
+</code></pre>
+  </li>
+  <li><a href="https://ionicframework.com/docs/native/#Add_Plugins_to_Your_App_Module">Add this plugin to your app's module</a></li>
+</ol>
+
+<h2><a class="anchor" name="platforms" href="https://ionicframework.com/docs/native/google-maps/#platforms"></a>Supported platforms</h2>
+<ul>
+  <li>Android</li><li>iOS</li>
+</ul>
+
+<h2><a class="anchor" name="usage" href="https://ionicframework.com/docs/native/google-maps/#usage"></a>Usage</h2>
+<pre><code class="lang-typescript hljs"><span class="hljs-keyword">import</span> {
+ GoogleMaps,
+ GoogleMap,
+ GoogleMapsEvent,
+ GoogleMapOptions,
+ CameraPosition,
+ MarkerOptions,
+ Marker
+} from <span class="hljs-string">'@ionic-native/google-maps'</span>;
+<span class="hljs-keyword">import</span> { Component } from <span class="hljs-string">"@angular/core/"</span>;
+
+<span class="hljs-keyword">@Component</span>({
+  selector: <span class="hljs-string">'page-home'</span>,
+  templateUrl: <span class="hljs-string">'home.html'</span>
+})
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> HomePage {
+  map: GoogleMap;
+  <span class="hljs-constructor"><span class="hljs-keyword">constructor</span>(private googleMaps: GoogleMaps) </span>{ }
+
+  ionViewDidLoad() {
+   <span class="hljs-keyword">this</span>.loadMap();
+  }
+
+ loadMap() {
+
+    <span class="hljs-keyword">let</span> mapOptions: GoogleMapOptions = {
+      camera: {
+        target: {
+          lat: <span class="hljs-number">43.0741904</span>,
+          lng: -<span class="hljs-number">89.3809802</span>
+        },
+        zoom: <span class="hljs-number">18</span>,
+        tilt: <span class="hljs-number">30</span>
+      }
+    };
+
+    <span class="hljs-keyword">this</span>.map = <span class="hljs-keyword">this</span>.googleMaps.create(<span class="hljs-string">'map_canvas'</span>, mapOptions);
+
+    <span class="hljs-comment">// Wait the MAP_READY before using any methods.</span>
+    <span class="hljs-keyword">this</span>.map.one(GoogleMapsEvent.MAP_READY)
+      .then(() =&gt; {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Map is ready!'</span>);
+
+        <span class="hljs-comment">// Now you can use all methods safely.</span>
+        <span class="hljs-keyword">this</span>.map.addMarker({
+            title: <span class="hljs-string">'Ionic'</span>,
+            icon: <span class="hljs-string">'blue'</span>,
+            animation: <span class="hljs-string">'DROP'</span>,
+            position: {
+              lat: <span class="hljs-number">43.0741904</span>,
+              lng: -<span class="hljs-number">89.3809802</span>
+            }
+          })
+          .then(marker =&gt; {
+            marker.on(GoogleMapsEvent.MARKER_CLICK)
+              .subscribe(() =&gt; {
+                alert(<span class="hljs-string">'clicked'</span>);
+              });
+          });
+
+      });
+  }
+}
+</code></pre>
+
+<h2><a class="anchor" name="static-members" href="https://ionicframework.com/docs/native/google-maps/#static-members"></a>Static Members</h2>
+<h3><a class="anchor" name="create" href="https://ionicframework.com/docs/native/google-maps/#create"></a><code>create(element,&nbsp;options)</code></h3>
+
+<p>Creates a new GoogleMap instance</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      element</td>
+    <td>
+      <code>string</code>|<code>HTMLElement</code>
+    </td>
+    <td>
+      <p>Element ID or reference to attach the map to</p>
+</td>
+  </tr>
+  
+  <tr>
+    <td>
+      options</td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      <p>Options</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>GoogleMap</code></p>
+</div>
+
+<h2><a class="anchor" name="GoogleMap" href="https://ionicframework.com/docs/native/google-maps/#GoogleMap"></a>GoogleMap</h2>
+
+<h2><a class="anchor" name="instance-members" href="https://ionicframework.com/docs/native/google-maps/#instance-members"></a>Instance Members</h2>
+<h3><a class="anchor" name="setDiv" href="https://ionicframework.com/docs/native/google-maps/#setDiv"></a><code>setDiv(domNode)</code></h3>
+
+<p>Changes the map div</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      domNode</td>
+    <td>
+      
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getDiv" href="https://ionicframework.com/docs/native/google-maps/#getDiv"></a><code>getDiv()</code></h3>
+
+<p>Returns the map HTML element</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>HTMLElement</code></p>
+</div>
+<h3><a class="anchor" name="setMapTypeId" href="https://ionicframework.com/docs/native/google-maps/#setMapTypeId"></a><code>setMapTypeId(mapTypeId)</code></h3>
+
+<p>Changes the map type id</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      mapTypeId</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="animateCamera" href="https://ionicframework.com/docs/native/google-maps/#animateCamera"></a><code>animateCamera()</code></h3>
+
+<p>Moves the camera with animation</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="animateCameraZoomIn" href="https://ionicframework.com/docs/native/google-maps/#animateCameraZoomIn"></a><code>animateCameraZoomIn()</code></h3>
+
+<p>Zooming in the camera with animation</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="animateCameraZoomOut" href="https://ionicframework.com/docs/native/google-maps/#animateCameraZoomOut"></a><code>animateCameraZoomOut()</code></h3>
+
+<p>Zooming out the camera with animation</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="moveCamera" href="https://ionicframework.com/docs/native/google-maps/#moveCamera"></a><code>moveCamera()</code></h3>
+
+<p>Moves the camera without animation</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="moveCameraZoomIn" href="https://ionicframework.com/docs/native/google-maps/#moveCameraZoomIn"></a><code>moveCameraZoomIn()</code></h3>
+
+<p>Zooming in the camera without animation</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="moveCameraZoomOut" href="https://ionicframework.com/docs/native/google-maps/#moveCameraZoomOut"></a><code>moveCameraZoomOut()</code></h3>
+
+<p>Zooming out the camera without animation</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="getCameraPosition" href="https://ionicframework.com/docs/native/google-maps/#getCameraPosition"></a><code>getCameraPosition()</code></h3>
+
+<p>Get the position of the camera.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>CameraPosition</code></p>
+</div>
+<h3><a class="anchor" name="getCameraTarget" href="https://ionicframework.com/docs/native/google-maps/#getCameraTarget"></a><code>getCameraTarget()</code></h3>
+
+<p>Get the current camera target position</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;CameraPosition&gt;</code></p>
+</div>
+<h3><a class="anchor" name="getCameraZoom" href="https://ionicframework.com/docs/native/google-maps/#getCameraZoom"></a><code>getCameraZoom()</code></h3>
+
+<p>Get the current camera zoom level</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="getCameraBearing" href="https://ionicframework.com/docs/native/google-maps/#getCameraBearing"></a><code>getCameraBearing()</code></h3>
+
+<p>Get the current camera bearing</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="getCameraTilt" href="https://ionicframework.com/docs/native/google-maps/#getCameraTilt"></a><code>getCameraTilt()</code></h3>
+
+<p>Get the current camera tilt (view angle)</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="setCameraTarget" href="https://ionicframework.com/docs/native/google-maps/#setCameraTarget"></a><code>setCameraTarget(latLng)</code></h3>
+
+<p>Set the center position of the camera view</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      latLng</td>
+    <td>
+      <code>ILatLng</code>|<code>Array.&lt;ILatLng&gt;</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setCameraZoom" href="https://ionicframework.com/docs/native/google-maps/#setCameraZoom"></a><code>setCameraZoom(zoomLevel)</code></h3>
+
+<p>Set zoom level of the camera</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      zoomLevel</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Zoom level</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setCameraTilt" href="https://ionicframework.com/docs/native/google-maps/#setCameraTilt"></a><code>setCameraTilt(tiltLevel)</code></h3>
+
+<p>Set the camera view angle</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      tiltLevel</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Tilt level</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setCameraBearing" href="https://ionicframework.com/docs/native/google-maps/#setCameraBearing"></a><code>setCameraBearing(bearing)</code></h3>
+
+<p>Set camera bearing</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      bearing</td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="panBy" href="https://ionicframework.com/docs/native/google-maps/#panBy"></a><code>panBy(x,&nbsp;y)</code></h3>
+
+<p>Change the center of the map by the given distance in pixels</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      x</td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      y</td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getVisibleRegion" href="https://ionicframework.com/docs/native/google-maps/#getVisibleRegion"></a><code>getVisibleRegion()</code></h3>
+
+<p>Get the current visible region (southWest and northEast)</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>VisibleRegion</code></p>
+</div>
+<h3><a class="anchor" name="getMyLocation" href="https://ionicframework.com/docs/native/google-maps/#getMyLocation"></a><code>getMyLocation()</code></h3>
+
+<p>Get the current device location</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;MyLocation&gt;</code></p>
+</div>
+<h3><a class="anchor" name="setClickable" href="https://ionicframework.com/docs/native/google-maps/#setClickable"></a><code>setClickable(isClickable)</code></h3>
+
+<p>Set false to ignore all clicks on the map</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      isClickable</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="remove" href="https://ionicframework.com/docs/native/google-maps/#remove"></a><code>remove()</code></h3>
+
+<p>Destroy a map completely</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="clear" href="https://ionicframework.com/docs/native/google-maps/#clear"></a><code>clear()</code></h3>
+
+<p>Remove all overlays, such as marker</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="fromLatLngToPoint" href="https://ionicframework.com/docs/native/google-maps/#fromLatLngToPoint"></a><code>fromLatLngToPoint()</code></h3>
+
+<p>Convert the unit from LatLng to the pixels from the left/top of the map div</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="fromPointToLatLng" href="https://ionicframework.com/docs/native/google-maps/#fromPointToLatLng"></a><code>fromPointToLatLng()</code></h3>
+
+<p>Convert the unit from the pixels from the left/top to the LatLng</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;LatLng&gt;</code></p>
+</div>
+<h3><a class="anchor" name="setMyLocationEnabled" href="https://ionicframework.com/docs/native/google-maps/#setMyLocationEnabled"></a><code>setMyLocationEnabled(enabled)</code></h3>
+
+<p>Set true if you want to show the MyLocation button</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      enabled</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getFocusedBuilding" href="https://ionicframework.com/docs/native/google-maps/#getFocusedBuilding"></a><code>getFocusedBuilding()</code></h3>
+
+<p>Get the currently focused building</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="setIndoorEnabled" href="https://ionicframework.com/docs/native/google-maps/#setIndoorEnabled"></a><code>setIndoorEnabled(enabled)</code></h3>
+
+<p>Set true if you want to show the indoor map</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      enabled</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setTrafficEnabled" href="https://ionicframework.com/docs/native/google-maps/#setTrafficEnabled"></a><code>setTrafficEnabled(enabled)</code></h3>
+
+<p>Set true if you want to show the traffic layer</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      enabled</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setCompassEnabled" href="https://ionicframework.com/docs/native/google-maps/#setCompassEnabled"></a><code>setCompassEnabled(enabled)</code></h3>
+
+<p>Set true if you want to show the compass button</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      enabled</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setAllGesturesEnabled" href="https://ionicframework.com/docs/native/google-maps/#setAllGesturesEnabled"></a><code>setAllGesturesEnabled(enabled)</code></h3>
+
+<p>Sets the preference for whether all gestures should be enabled or disabled</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      enabled</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setVisible" href="https://ionicframework.com/docs/native/google-maps/#setVisible"></a><code>setVisible(visible)</code></h3>
+
+<p>Set visibility of the map</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      visible</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setPadding" href="https://ionicframework.com/docs/native/google-maps/#setPadding"></a><code>setPadding(top,&nbsp;right,&nbsp;left,&nbsp;bottom)</code></h3>
+
+<p>Adjust the map padding (same as CSS padding rule)</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      top</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      right</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      left</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      bottom</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setOptions" href="https://ionicframework.com/docs/native/google-maps/#setOptions"></a><code>setOptions(options)</code></h3>
+
+<p>Set options</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      options</td>
+    <td>
+      
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="addMarker" href="https://ionicframework.com/docs/native/google-maps/#addMarker"></a><code>addMarker()</code></h3>
+
+<p>Adds a marker</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;Marker | any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="addMarkerCluster" href="https://ionicframework.com/docs/native/google-maps/#addMarkerCluster"></a><code>addMarkerCluster()</code></h3>
+
+<h3><a class="anchor" name="addCircle" href="https://ionicframework.com/docs/native/google-maps/#addCircle"></a><code>addCircle()</code></h3>
+
+<p>Adds a circle</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;Circle | any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="addPolygon" href="https://ionicframework.com/docs/native/google-maps/#addPolygon"></a><code>addPolygon()</code></h3>
+
+<p>Adds a polygon</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;Polygon | any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="addPolyline" href="https://ionicframework.com/docs/native/google-maps/#addPolyline"></a><code>addPolyline()</code></h3>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;Polyline | any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="addTileOverlay" href="https://ionicframework.com/docs/native/google-maps/#addTileOverlay"></a><code>addTileOverlay()</code></h3>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;TileOverlay | any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="addGroundOverlay" href="https://ionicframework.com/docs/native/google-maps/#addGroundOverlay"></a><code>addGroundOverlay()</code></h3>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;GroundOverlay | any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="refreshLayout" href="https://ionicframework.com/docs/native/google-maps/#refreshLayout"></a><code>refreshLayout()</code></h3>
+
+<p>Refreshes layout.
+You can execute it, but you don’t need to do that. The plugin does this automatically.</p>
+
+<h3><a class="anchor" name="toDataURL" href="https://ionicframework.com/docs/native/google-maps/#toDataURL"></a><code>toDataURL()</code></h3>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h2><a class="anchor" name="Circle" href="https://ionicframework.com/docs/native/google-maps/#Circle"></a>Circle</h2>
+
+<h2><a class="anchor" name="instance-members" href="https://ionicframework.com/docs/native/google-maps/#instance-members"></a>Instance Members</h2>
+<h3><a class="anchor" name="getId" href="https://ionicframework.com/docs/native/google-maps/#getId"></a><code>getId()</code></h3>
+
+<p>Return the ID of instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="getMap" href="https://ionicframework.com/docs/native/google-maps/#getMap"></a><code>getMap()</code></h3>
+
+<p>Return the map instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>GoogleMap</code></p>
+</div>
+<h3><a class="anchor" name="setCenter" href="https://ionicframework.com/docs/native/google-maps/#setCenter"></a><code>setCenter(latLng)</code></h3>
+
+<p>Change the center position.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      latLng</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getCenter" href="https://ionicframework.com/docs/native/google-maps/#getCenter"></a><code>getCenter()</code></h3>
+
+<p>Return the current center position</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>ILatLng</code></p>
+</div>
+<h3><a class="anchor" name="getRadius" href="https://ionicframework.com/docs/native/google-maps/#getRadius"></a><code>getRadius()</code></h3>
+
+<p>Return the current circle radius.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="setRadius" href="https://ionicframework.com/docs/native/google-maps/#setRadius"></a><code>setRadius(radius)</code></h3>
+
+<p>Change the circle radius.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      radius</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setFillColor" href="https://ionicframework.com/docs/native/google-maps/#setFillColor"></a><code>setFillColor(color)</code></h3>
+
+<p>Change the filling color (inner color).</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      color</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getFillColor" href="https://ionicframework.com/docs/native/google-maps/#getFillColor"></a><code>getFillColor()</code></h3>
+
+<p>Return the current circle filling color (inner color).</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="setStrokeWidth" href="https://ionicframework.com/docs/native/google-maps/#setStrokeWidth"></a><code>setStrokeWidth(strokeWidth)</code></h3>
+
+<p>Change the stroke width.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      strokeWidth</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getStrokeWidth" href="https://ionicframework.com/docs/native/google-maps/#getStrokeWidth"></a><code>getStrokeWidth()</code></h3>
+
+<p>Return the current circle stroke width (unit: pixel).</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="setStrokeColor" href="https://ionicframework.com/docs/native/google-maps/#setStrokeColor"></a><code>setStrokeColor(strokeColor)</code></h3>
+
+<p>Change the stroke color (outter color).</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      strokeColor</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getStrokeColor" href="https://ionicframework.com/docs/native/google-maps/#getStrokeColor"></a><code>getStrokeColor()</code></h3>
+
+<p>Return the current circle stroke color (outer color).</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="setClickable" href="https://ionicframework.com/docs/native/google-maps/#setClickable"></a><code>setClickable(clickable)</code></h3>
+
+<p>Change clickablity of the circle.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      clickable</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getClickable" href="https://ionicframework.com/docs/native/google-maps/#getClickable"></a><code>getClickable()</code></h3>
+
+<p>Return true if the circle is clickable.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+<h3><a class="anchor" name="setZIndex" href="https://ionicframework.com/docs/native/google-maps/#setZIndex"></a><code>setZIndex(zIndex)</code></h3>
+
+<p>Change the circle zIndex order.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      zIndex</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getZIndex" href="https://ionicframework.com/docs/native/google-maps/#getZIndex"></a><code>getZIndex()</code></h3>
+
+<p>Return the current circle zIndex.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="remove" href="https://ionicframework.com/docs/native/google-maps/#remove"></a><code>remove()</code></h3>
+
+<p>Remove the circle.</p>
+
+<h3><a class="anchor" name="getBounds" href="https://ionicframework.com/docs/native/google-maps/#getBounds"></a><code>getBounds()</code></h3>
+
+<p>Return the latLngBounds (rectangle) that contains the circle.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>LatLngBounds</code></p>
+</div>
+<h3><a class="anchor" name="setVisible" href="https://ionicframework.com/docs/native/google-maps/#setVisible"></a><code>setVisible(visible)</code></h3>
+
+<p>Set circle visibility</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      visible</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getVisible" href="https://ionicframework.com/docs/native/google-maps/#getVisible"></a><code>getVisible()</code></h3>
+
+<p>Returns a boolean that indicates whether the circle is visible</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+<h2><a class="anchor" name="Encoding" href="https://ionicframework.com/docs/native/google-maps/#Encoding"></a>Encoding</h2>
+<h2><a class="anchor" name="static-members" href="https://ionicframework.com/docs/native/google-maps/#static-members"></a>Static Members</h2>
+<h3><a class="anchor" name="decodePath" href="https://ionicframework.com/docs/native/google-maps/#decodePath"></a><code>decodePath(encoded,&nbsp;precision?)</code></h3>
+
+<p>Decodes an encoded path string into a sequence of LatLngs.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      encoded</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      <p>an encoded path string</p>
+</td>
+  </tr>
+  
+  <tr>
+    <td>
+      precision?</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>default: 5</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>LatLng</code></p>
+</div>
+<h3><a class="anchor" name="encodePath" href="https://ionicframework.com/docs/native/google-maps/#encodePath"></a><code>encodePath(path)</code></h3>
+
+<p>Encodes a sequence of LatLngs into an encoded path string.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      path</td>
+    <td>
+      <code>Array.&lt;ILatLng&gt;</code>|<code>BaseArrayClass.&lt;ILatLng&gt;</code>
+    </td>
+    <td>
+      <p>a sequence of LatLngs</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+
+<h2><a class="anchor" name="Environment" href="https://ionicframework.com/docs/native/google-maps/#Environment"></a>Environment</h2>
+<h2><a class="anchor" name="static-members" href="https://ionicframework.com/docs/native/google-maps/#static-members"></a>Static Members</h2>
+<h3><a class="anchor" name="getLicenseInfo" href="https://ionicframework.com/docs/native/google-maps/#getLicenseInfo"></a><code>getLicenseInfo()</code></h3>
+
+<p>Get the open source software license information for Google Maps SDK for iOS.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="setBackgroundColor" href="https://ionicframework.com/docs/native/google-maps/#setBackgroundColor"></a><code>setBackgroundColor(color)</code></h3>
+
+<p>Specifies the background color of the app.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      color</td>
+    <td>
+      
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h2><a class="anchor" name="Geocoder" href="https://ionicframework.com/docs/native/google-maps/#Geocoder"></a>Geocoder</h2>
+<h2><a class="anchor" name="static-members" href="https://ionicframework.com/docs/native/google-maps/#static-members"></a>Static Members</h2>
+<h3><a class="anchor" name="geocode" href="https://ionicframework.com/docs/native/google-maps/#geocode"></a><code>geocode(request)</code></h3>
+
+<p>Converts position to address and vice versa</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      request</td>
+    <td>
+      <code>GeocoderRequest</code>
+    </td>
+    <td>
+      <p>Request object with either an address or a position</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;GeocoderResult[] | BaseArrayClass&lt;GeocoderResult&gt;&gt;</code></p>
+</div>
+
+<h2><a class="anchor" name="GroundOverlay" href="https://ionicframework.com/docs/native/google-maps/#GroundOverlay"></a>GroundOverlay</h2>
+
+<h2><a class="anchor" name="instance-members" href="https://ionicframework.com/docs/native/google-maps/#instance-members"></a>Instance Members</h2>
+<h3><a class="anchor" name="getId" href="https://ionicframework.com/docs/native/google-maps/#getId"></a><code>getId()</code></h3>
+
+<p>Return the ID of instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="getMap" href="https://ionicframework.com/docs/native/google-maps/#getMap"></a><code>getMap()</code></h3>
+
+<p>Return the map instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>GoogleMap</code></p>
+</div>
+<h3><a class="anchor" name="setBounds" href="https://ionicframework.com/docs/native/google-maps/#setBounds"></a><code>setBounds(bounds)</code></h3>
+
+<p>Change the bounds of the GroundOverlay</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      bounds</td>
+    <td>
+      <code>ILatLng[]</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setBearing" href="https://ionicframework.com/docs/native/google-maps/#setBearing"></a><code>setBearing(bearing)</code></h3>
+
+<p>Change the bearing of the ground overlay</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      bearing</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getBearing" href="https://ionicframework.com/docs/native/google-maps/#getBearing"></a><code>getBearing()</code></h3>
+
+<p>Return the current bearing value</p>
+
+<h3><a class="anchor" name="setImage" href="https://ionicframework.com/docs/native/google-maps/#setImage"></a><code>setImage(image)</code></h3>
+
+<p>Change the image of the ground overlay</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      image</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      <p>URL of image</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setOpacity" href="https://ionicframework.com/docs/native/google-maps/#setOpacity"></a><code>setOpacity(opacity)</code></h3>
+
+<p>Change the opacity of the ground overlay from 0.0 to 1.0</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      opacity</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getOpacity" href="https://ionicframework.com/docs/native/google-maps/#getOpacity"></a><code>getOpacity()</code></h3>
+
+<p>Return the current opacity</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="setClickable" href="https://ionicframework.com/docs/native/google-maps/#setClickable"></a><code>setClickable(clickable)</code></h3>
+
+<p>Change clickablity of the ground overlay</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      clickable</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getClickable" href="https://ionicframework.com/docs/native/google-maps/#getClickable"></a><code>getClickable()</code></h3>
+
+<p>Return true if the ground overlay is clickable</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+<h3><a class="anchor" name="setVisible" href="https://ionicframework.com/docs/native/google-maps/#setVisible"></a><code>setVisible(visible)</code></h3>
+
+<p>Change visibility of the ground overlay</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      visible</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getVisible" href="https://ionicframework.com/docs/native/google-maps/#getVisible"></a><code>getVisible()</code></h3>
+
+<p>Return true if the ground overlay is visible</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+<h3><a class="anchor" name="setZIndex" href="https://ionicframework.com/docs/native/google-maps/#setZIndex"></a><code>setZIndex(index)</code></h3>
+
+<p>Change the ground overlay zIndex order</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      index</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getZIndex" href="https://ionicframework.com/docs/native/google-maps/#getZIndex"></a><code>getZIndex()</code></h3>
+
+<p>Return the current ground overlay zIndex</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="remove" href="https://ionicframework.com/docs/native/google-maps/#remove"></a><code>remove()</code></h3>
+
+<p>Remove the ground overlay</p>
+
+<h2><a class="anchor" name="HtmlInfoWindow" href="https://ionicframework.com/docs/native/google-maps/#HtmlInfoWindow"></a>HtmlInfoWindow</h2>
+
+<h2><a class="anchor" name="instance-members" href="https://ionicframework.com/docs/native/google-maps/#instance-members"></a>Instance Members</h2>
+<h3><a class="anchor" name="setBackgroundColor" href="https://ionicframework.com/docs/native/google-maps/#setBackgroundColor"></a><code>setBackgroundColor(color)</code></h3>
+
+<p>Change the backgroundColor</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      color</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setContent" href="https://ionicframework.com/docs/native/google-maps/#setContent"></a><code>setContent(content,&nbsp;cssOptions?)</code></h3>
+
+<p>Set your HTML contents.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      content</td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      <p>String containing text or HTML element</p>
+</td>
+  </tr>
+  
+  <tr>
+    <td>
+      cssOptions?</td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      <p>CSS styles for the container element of HTMLInfoWindow</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="open" href="https://ionicframework.com/docs/native/google-maps/#open"></a><code>open(marker)</code></h3>
+
+<p>Open the htmlInfoWindow</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      marker</td>
+    <td>
+      <code>Marker</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="close" href="https://ionicframework.com/docs/native/google-maps/#close"></a><code>close()</code></h3>
+
+<p>Close the htmlInfoWindow</p>
+
+<h2><a class="anchor" name="Geocoder" href="https://ionicframework.com/docs/native/google-maps/#Geocoder"></a>Geocoder</h2>
+<h2><a class="anchor" name="static-members" href="https://ionicframework.com/docs/native/google-maps/#static-members"></a>Static Members</h2>
+<h3><a class="anchor" name="geocode" href="https://ionicframework.com/docs/native/google-maps/#geocode"></a><code>geocode(request)</code></h3>
+
+<p>Converts position to address and vice versa</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      request</td>
+    <td>
+      <code>GeocoderRequest</code>
+    </td>
+    <td>
+      <p>Request object with either an address or a position</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;GeocoderResult[] | BaseArrayClass&lt;GeocoderResult&gt;&gt;</code></p>
+</div>
+
+<h2><a class="anchor" name="LatLng" href="https://ionicframework.com/docs/native/google-maps/#LatLng"></a>LatLng</h2>
+
+<h2><a class="anchor" name="instance-members" href="https://ionicframework.com/docs/native/google-maps/#instance-members"></a>Instance Members</h2>
+<h3><a class="anchor" name="lat" href="https://ionicframework.com/docs/native/google-maps/#lat"></a><code>lat()</code></h3>
+
+<h3><a class="anchor" name="lng" href="https://ionicframework.com/docs/native/google-maps/#lng"></a><code>lng()</code></h3>
+
+<h3><a class="anchor" name="equals" href="https://ionicframework.com/docs/native/google-maps/#equals"></a><code>equals()</code></h3>
+
+<h3><a class="anchor" name="toString" href="https://ionicframework.com/docs/native/google-maps/#toString"></a><code>toString()</code></h3>
+
+<h3><a class="anchor" name="toUrlValue" href="https://ionicframework.com/docs/native/google-maps/#toUrlValue"></a><code>toUrlValue()</code></h3>
+
+<h2><a class="anchor" name="LatLngBounds" href="https://ionicframework.com/docs/native/google-maps/#LatLngBounds"></a>LatLngBounds</h2>
+
+<h2><a class="anchor" name="instance-members" href="https://ionicframework.com/docs/native/google-maps/#instance-members"></a>Instance Members</h2>
+<h3><a class="anchor" name="northeast" href="https://ionicframework.com/docs/native/google-maps/#northeast"></a><code>northeast()</code></h3>
+
+<h3><a class="anchor" name="southwest" href="https://ionicframework.com/docs/native/google-maps/#southwest"></a><code>southwest()</code></h3>
+
+<h3><a class="anchor" name="type" href="https://ionicframework.com/docs/native/google-maps/#type"></a><code>type()</code></h3>
+
+<h3><a class="anchor" name="toString" href="https://ionicframework.com/docs/native/google-maps/#toString"></a><code>toString()</code></h3>
+
+<p>Converts to string</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="toUrlValue" href="https://ionicframework.com/docs/native/google-maps/#toUrlValue"></a><code>toUrlValue(precision)</code></h3>
+
+<p>Returns a string of the form “lat_sw,lng_sw,lat_ne,lng_ne” for this bounds, where “sw” corresponds to the southwest corner of the bounding box, while “ne” corresponds to the northeast corner of that box.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      precision</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="extend" href="https://ionicframework.com/docs/native/google-maps/#extend"></a><code>extend(LatLng)</code></h3>
+
+<p>Extends this bounds to contain the given point.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      LatLng</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="contains" href="https://ionicframework.com/docs/native/google-maps/#contains"></a><code>contains(LatLng)</code></h3>
+
+<p>Returns true if the given lat/lng is in this bounds.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      LatLng</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getCenter" href="https://ionicframework.com/docs/native/google-maps/#getCenter"></a><code>getCenter()</code></h3>
+
+<p>Computes the center of this LatLngBounds</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>LatLng</code></p>
+</div>
+<h2><a class="anchor" name="Marker" href="https://ionicframework.com/docs/native/google-maps/#Marker"></a>Marker</h2>
+
+<h2><a class="anchor" name="instance-members" href="https://ionicframework.com/docs/native/google-maps/#instance-members"></a>Instance Members</h2>
+<h3><a class="anchor" name="getId" href="https://ionicframework.com/docs/native/google-maps/#getId"></a><code>getId()</code></h3>
+
+<p>Return the ID of instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="getMap" href="https://ionicframework.com/docs/native/google-maps/#getMap"></a><code>getMap()</code></h3>
+
+<p>Return the map instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>GoogleMap</code></p>
+</div>
+<h3><a class="anchor" name="setPosition" href="https://ionicframework.com/docs/native/google-maps/#setPosition"></a><code>setPosition(latLng)</code></h3>
+
+<p>Set the marker position.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      latLng</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getPosition" href="https://ionicframework.com/docs/native/google-maps/#getPosition"></a><code>getPosition()</code></h3>
+
+<p>Return the marker position.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>ILatLng</code></p>
+</div>
+<h3><a class="anchor" name="showInfoWindow" href="https://ionicframework.com/docs/native/google-maps/#showInfoWindow"></a><code>showInfoWindow()</code></h3>
+
+<p>Show the normal infoWindow of the marker.</p>
+
+<h3><a class="anchor" name="hideInfoWindow" href="https://ionicframework.com/docs/native/google-maps/#hideInfoWindow"></a><code>hideInfoWindow()</code></h3>
+
+<p>Hide the normal infoWindow of the marker.</p>
+
+<h3><a class="anchor" name="setAnimation" href="https://ionicframework.com/docs/native/google-maps/#setAnimation"></a><code>setAnimation(animation)</code></h3>
+
+<p>Specify the animation either <code class="highlighter-rouge">DROP</code> or <code class="highlighter-rouge">BOUNCE</code></p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      animation</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setDisableAutoPan" href="https://ionicframework.com/docs/native/google-maps/#setDisableAutoPan"></a><code>setDisableAutoPan(disableAutoPan)</code></h3>
+
+<p>Set true if you <strong>do not want</strong> to move the map when you click on the marker.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      disableAutoPan</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setVisible" href="https://ionicframework.com/docs/native/google-maps/#setVisible"></a><code>setVisible(visible)</code></h3>
+
+<p>Set false if you want to hide the marker.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      visible</td>
+    <td>
+      
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="isVisible" href="https://ionicframework.com/docs/native/google-maps/#isVisible"></a><code>isVisible()</code></h3>
+
+<p>Return true if the marker is visible</p>
+
+<h3><a class="anchor" name="setTitle" href="https://ionicframework.com/docs/native/google-maps/#setTitle"></a><code>setTitle(title)</code></h3>
+
+<p>Change title of the normal infoWindow.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      title</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getTitle" href="https://ionicframework.com/docs/native/google-maps/#getTitle"></a><code>getTitle()</code></h3>
+
+<p>Return the title strings.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="setSnippet" href="https://ionicframework.com/docs/native/google-maps/#setSnippet"></a><code>setSnippet(snippet)</code></h3>
+
+<p>Change snippet of the normal infoWindow.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      snippet</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getSnippet" href="https://ionicframework.com/docs/native/google-maps/#getSnippet"></a><code>getSnippet()</code></h3>
+
+<p>Return the snippet strings.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="setOpacity" href="https://ionicframework.com/docs/native/google-maps/#setOpacity"></a><code>setOpacity(alpha)</code></h3>
+
+<p>Change the marker opacity from 0.0 to 1.0.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      alpha</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Opacity</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getOpacity" href="https://ionicframework.com/docs/native/google-maps/#getOpacity"></a><code>getOpacity()</code></h3>
+
+<p>Return the marker opacity.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code> Opacity</p>
+</div>
+<h3><a class="anchor" name="remove" href="https://ionicframework.com/docs/native/google-maps/#remove"></a><code>remove()</code></h3>
+
+<p>Remove the marker.</p>
+
+<h3><a class="anchor" name="setIconAnchor" href="https://ionicframework.com/docs/native/google-maps/#setIconAnchor"></a><code>setIconAnchor(x,&nbsp;y)</code></h3>
+
+<p>Change the info window anchor. This defaults to 50% from the left of the image and at the bottom of the image.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      x</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Distance from left of the icon image in pixels.</p>
+</td>
+  </tr>
+  
+  <tr>
+    <td>
+      y</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Distance from top of the icon image in pixels.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setInfoWindowAnchor" href="https://ionicframework.com/docs/native/google-maps/#setInfoWindowAnchor"></a><code>setInfoWindowAnchor(x,&nbsp;y)</code></h3>
+
+<p>Change the info window anchor. This defaults to 50% from the left of the image and at the top of the image.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      x</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Distance from left of the icon image in pixels.</p>
+</td>
+  </tr>
+  
+  <tr>
+    <td>
+      y</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Distance from top of the icon image in pixels.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="isInfoWindowShown" href="https://ionicframework.com/docs/native/google-maps/#isInfoWindowShown"></a><code>isInfoWindowShown()</code></h3>
+
+<p>Return true if the infoWindow is shown on the marker</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+<h3><a class="anchor" name="getHashCode" href="https://ionicframework.com/docs/native/google-maps/#getHashCode"></a><code>getHashCode()</code></h3>
+
+<p>Return the marker hash code.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code> Marker hash code</p>
+</div>
+<h3><a class="anchor" name="setZIndex" href="https://ionicframework.com/docs/native/google-maps/#setZIndex"></a><code>setZIndex(y)</code></h3>
+
+<p>Higher zIndex value overlays will be drawn on top of lower zIndex value tile layers and overlays.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      y</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>z-index</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getZIndex" href="https://ionicframework.com/docs/native/google-maps/#getZIndex"></a><code>getZIndex()</code></h3>
+
+<p>Get z-index</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="setDraggable" href="https://ionicframework.com/docs/native/google-maps/#setDraggable"></a><code>setDraggable(draggable)</code></h3>
+
+<p>Set true if you allow all users to drag the marker.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      draggable</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="isDraggable" href="https://ionicframework.com/docs/native/google-maps/#isDraggable"></a><code>isDraggable()</code></h3>
+
+<p>Return true if the marker drag is enabled.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+<h3><a class="anchor" name="setFlat" href="https://ionicframework.com/docs/native/google-maps/#setFlat"></a><code>setFlat(flat)</code></h3>
+
+<p>Set true if you want to be flat marker.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      flat</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setIcon" href="https://ionicframework.com/docs/native/google-maps/#setIcon"></a><code>setIcon(icon)</code></h3>
+
+<p>Change icon url and/or size</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      icon</td>
+    <td>
+      
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setRotation" href="https://ionicframework.com/docs/native/google-maps/#setRotation"></a><code>setRotation(rotation)</code></h3>
+
+<p>Set the marker rotation angle.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      rotation</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getRotation" href="https://ionicframework.com/docs/native/google-maps/#getRotation"></a><code>getRotation()</code></h3>
+
+<p>Return the marker rotation angle.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h2><a class="anchor" name="MarkerCluster" href="https://ionicframework.com/docs/native/google-maps/#MarkerCluster"></a>MarkerCluster</h2>
+
+<h2><a class="anchor" name="instance-members" href="https://ionicframework.com/docs/native/google-maps/#instance-members"></a>Instance Members</h2>
+<h3><a class="anchor" name="getId" href="https://ionicframework.com/docs/native/google-maps/#getId"></a><code>getId()</code></h3>
+
+<p>Return the ID of instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="addMarker" href="https://ionicframework.com/docs/native/google-maps/#addMarker"></a><code>addMarker()</code></h3>
+
+<h3><a class="anchor" name="addMarkers" href="https://ionicframework.com/docs/native/google-maps/#addMarkers"></a><code>addMarkers()</code></h3>
+
+<h3><a class="anchor" name="remove" href="https://ionicframework.com/docs/native/google-maps/#remove"></a><code>remove()</code></h3>
+
+<h3><a class="anchor" name="getMap" href="https://ionicframework.com/docs/native/google-maps/#getMap"></a><code>getMap()</code></h3>
+
+<p>Return the map instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>GoogleMap</code></p>
+</div>
+<h2><a class="anchor" name="Polygon" href="https://ionicframework.com/docs/native/google-maps/#Polygon"></a>Polygon</h2>
+
+<h2><a class="anchor" name="instance-members" href="https://ionicframework.com/docs/native/google-maps/#instance-members"></a>Instance Members</h2>
+<h3><a class="anchor" name="getId" href="https://ionicframework.com/docs/native/google-maps/#getId"></a><code>getId()</code></h3>
+
+<p>Return the ID of instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="getMap" href="https://ionicframework.com/docs/native/google-maps/#getMap"></a><code>getMap()</code></h3>
+
+<p>Return the map instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>GoogleMap</code></p>
+</div>
+<h3><a class="anchor" name="setPoints" href="https://ionicframework.com/docs/native/google-maps/#setPoints"></a><code>setPoints(points)</code></h3>
+
+<p>Change the polygon points.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      points</td>
+    <td>
+      <code>ILatLng[]</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getPoints" href="https://ionicframework.com/docs/native/google-maps/#getPoints"></a><code>getPoints()</code></h3>
+
+<p>Return an instance of the BaseArrayClass.
+You can modify the points.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>BaseArrayClass&lt;ILatLng&gt;</code></p>
+</div>
+<h3><a class="anchor" name="setHoles" href="https://ionicframework.com/docs/native/google-maps/#setHoles"></a><code>setHoles(holes)</code></h3>
+
+<p>Change the polygon holes.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      holes</td>
+    <td>
+      <code>ILatLng[][]</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getHoles" href="https://ionicframework.com/docs/native/google-maps/#getHoles"></a><code>getHoles()</code></h3>
+
+<p>Return an instance of the BaseArrayClass.
+You can modify the holes.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>BaseArrayClass&lt;ILatLng[]&gt;</code></p>
+</div>
+<h3><a class="anchor" name="setFillColor" href="https://ionicframework.com/docs/native/google-maps/#setFillColor"></a><code>setFillColor(fillColor)</code></h3>
+
+<p>Change the filling color (inner color)</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      fillColor</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getFillColor" href="https://ionicframework.com/docs/native/google-maps/#getFillColor"></a><code>getFillColor()</code></h3>
+
+<p>Return the current polygon filling color (inner color).</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="setStrokeColor" href="https://ionicframework.com/docs/native/google-maps/#setStrokeColor"></a><code>setStrokeColor(strokeColor)</code></h3>
+
+<p>Change the stroke color (outer color)</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      strokeColor</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getStrokeColor" href="https://ionicframework.com/docs/native/google-maps/#getStrokeColor"></a><code>getStrokeColor()</code></h3>
+
+<p>Return the current polygon stroke color (outer color)</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="setClickable" href="https://ionicframework.com/docs/native/google-maps/#setClickable"></a><code>setClickable(clickable)</code></h3>
+
+<p>Change clickablity of the polygon</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      clickable</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getClickable" href="https://ionicframework.com/docs/native/google-maps/#getClickable"></a><code>getClickable()</code></h3>
+
+<p>Return true if the polygon is clickable</p>
+
+<h3><a class="anchor" name="setVisible" href="https://ionicframework.com/docs/native/google-maps/#setVisible"></a><code>setVisible(visible)</code></h3>
+
+<p>Change visibility of the polygon</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      visible</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getVisible" href="https://ionicframework.com/docs/native/google-maps/#getVisible"></a><code>getVisible()</code></h3>
+
+<p>Return true if the polygon is visible</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+<h3><a class="anchor" name="setZIndex" href="https://ionicframework.com/docs/native/google-maps/#setZIndex"></a><code>setZIndex(zIndex)</code></h3>
+
+<p>Change the polygon zIndex order.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      zIndex</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getZIndex" href="https://ionicframework.com/docs/native/google-maps/#getZIndex"></a><code>getZIndex()</code></h3>
+
+<p>Return the current polygon zIndex</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="remove" href="https://ionicframework.com/docs/native/google-maps/#remove"></a><code>remove()</code></h3>
+
+<p>Remove the polygon.</p>
+
+<h3><a class="anchor" name="setStrokeWidth" href="https://ionicframework.com/docs/native/google-maps/#setStrokeWidth"></a><code>setStrokeWidth()</code></h3>
+
+<p>Change the polygon stroke width</p>
+
+<h3><a class="anchor" name="getStrokeWidth" href="https://ionicframework.com/docs/native/google-maps/#getStrokeWidth"></a><code>getStrokeWidth()</code></h3>
+
+<p>Return the polygon stroke width</p>
+
+<h3><a class="anchor" name="setGeodesic" href="https://ionicframework.com/docs/native/google-maps/#setGeodesic"></a><code>setGeodesic(geodesic)</code></h3>
+
+<p>When true, edges of the polygon are interpreted as geodesic and will follow the curvature of the Earth.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      geodesic</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getGeodesic" href="https://ionicframework.com/docs/native/google-maps/#getGeodesic"></a><code>getGeodesic()</code></h3>
+
+<p>Return true if the polygon is geodesic.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+<h2><a class="anchor" name="Polyline" href="https://ionicframework.com/docs/native/google-maps/#Polyline"></a>Polyline</h2>
+
+<h2><a class="anchor" name="instance-members" href="https://ionicframework.com/docs/native/google-maps/#instance-members"></a>Instance Members</h2>
+<h3><a class="anchor" name="getId" href="https://ionicframework.com/docs/native/google-maps/#getId"></a><code>getId()</code></h3>
+
+<p>Return the ID of instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="getMap" href="https://ionicframework.com/docs/native/google-maps/#getMap"></a><code>getMap()</code></h3>
+
+<p>Return the map instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>GoogleMap</code></p>
+</div>
+<h3><a class="anchor" name="setPoints" href="https://ionicframework.com/docs/native/google-maps/#setPoints"></a><code>setPoints(points)</code></h3>
+
+<p>Change the polyline points.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      points</td>
+    <td>
+      <code>ILatLng[]</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getPoints" href="https://ionicframework.com/docs/native/google-maps/#getPoints"></a><code>getPoints()</code></h3>
+
+<p>Return an instance of the BaseArrayClass
+You can modify the points.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>BaseArrayClass&lt;ILatLng&gt;</code></p>
+</div>
+<h3><a class="anchor" name="setGeoDesic" href="https://ionicframework.com/docs/native/google-maps/#setGeoDesic"></a><code>setGeoDesic(geoDesic)</code></h3>
+
+<p>When true, edges of the polyline are interpreted as geodesic and will follow the curvature of the Earth.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      geoDesic</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getGeodesic" href="https://ionicframework.com/docs/native/google-maps/#getGeodesic"></a><code>getGeodesic()</code></h3>
+
+<p>Return true if the polyline is geodesic</p>
+
+<h3><a class="anchor" name="setVisible" href="https://ionicframework.com/docs/native/google-maps/#setVisible"></a><code>setVisible(visible)</code></h3>
+
+<p>Change visibility of the polyline</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      visible</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getVisible" href="https://ionicframework.com/docs/native/google-maps/#getVisible"></a><code>getVisible()</code></h3>
+
+<p>Return true if the polyline is visible</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+<h3><a class="anchor" name="setClickable" href="https://ionicframework.com/docs/native/google-maps/#setClickable"></a><code>setClickable(clickable)</code></h3>
+
+<p>Change clickablity of the polyline</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      clickable</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getClickable" href="https://ionicframework.com/docs/native/google-maps/#getClickable"></a><code>getClickable()</code></h3>
+
+<p>Return true if the polyline is clickable</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+<h3><a class="anchor" name="setStrokeColor" href="https://ionicframework.com/docs/native/google-maps/#setStrokeColor"></a><code>setStrokeColor(strokeColor)</code></h3>
+
+<p>Change the polyline color</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      strokeColor</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getStrokeColor" href="https://ionicframework.com/docs/native/google-maps/#getStrokeColor"></a><code>getStrokeColor()</code></h3>
+
+<p>Return the current polyline color</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="setStrokeWidth" href="https://ionicframework.com/docs/native/google-maps/#setStrokeWidth"></a><code>setStrokeWidth(strokeWidth)</code></h3>
+
+<p>Change the polyline stroke width</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      strokeWidth</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getStrokeWidth" href="https://ionicframework.com/docs/native/google-maps/#getStrokeWidth"></a><code>getStrokeWidth()</code></h3>
+
+<p>Return the current stroke width (unit: pixel).</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="setZIndex" href="https://ionicframework.com/docs/native/google-maps/#setZIndex"></a><code>setZIndex(index)</code></h3>
+
+<p>Change the polyline zIndex order.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      index</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getZIndex" href="https://ionicframework.com/docs/native/google-maps/#getZIndex"></a><code>getZIndex()</code></h3>
+
+<p>Return the current polyline zIndex</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="remove" href="https://ionicframework.com/docs/native/google-maps/#remove"></a><code>remove()</code></h3>
+
+<p>Remove the polyline</p>
+
+<h2><a class="anchor" name="Spherical" href="https://ionicframework.com/docs/native/google-maps/#Spherical"></a>Spherical</h2>
+<h2><a class="anchor" name="static-members" href="https://ionicframework.com/docs/native/google-maps/#static-members"></a>Static Members</h2>
+<h3><a class="anchor" name="computeDistanceBetween" href="https://ionicframework.com/docs/native/google-maps/#computeDistanceBetween"></a><code>computeDistanceBetween(locationA,&nbsp;locationB)</code></h3>
+
+<p>Returns the distance, in meters, between two LatLngs.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      locationA</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      locationB</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="computeOffset" href="https://ionicframework.com/docs/native/google-maps/#computeOffset"></a><code>computeOffset(from,&nbsp;distance,&nbsp;heading)</code></h3>
+
+<p>Returns the LatLng resulting from moving a distance from an origin in the specified heading (expressed in degrees clockwise from north)</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      from</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      distance</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      heading</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>LatLng</code></p>
+</div>
+<h3><a class="anchor" name="computeOffsetOrigin" href="https://ionicframework.com/docs/native/google-maps/#computeOffsetOrigin"></a><code>computeOffsetOrigin(to,&nbsp;distance,&nbsp;heading)</code></h3>
+
+<p>Returns the location of origin when provided with a LatLng destination, meters travelled and original heading. Headings are expressed in degrees clockwise from North. This function returns null when no solution is available.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      to</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      <p>The destination LatLng.</p>
+</td>
+  </tr>
+  
+  <tr>
+    <td>
+      distance</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>The distance travelled, in meters.</p>
+</td>
+  </tr>
+  
+  <tr>
+    <td>
+      heading</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>The heading in degrees clockwise from north.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>LatLng</code></p>
+</div>
+<h3><a class="anchor" name="computeLength" href="https://ionicframework.com/docs/native/google-maps/#computeLength"></a><code>computeLength(path)</code></h3>
+
+<p>Returns the length of the given path.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      path</td>
+    <td>
+      <code>Array.&lt;ILatLng&gt;</code>|<code>BaseArrayClass.&lt;ILatLng&gt;</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="computeArea" href="https://ionicframework.com/docs/native/google-maps/#computeArea"></a><code>computeArea(path)</code></h3>
+
+<p>Returns the area of a closed path. The computed area uses the same units as the radius.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      path</td>
+    <td>
+      <code>Array.&lt;ILatLng&gt;</code>|<code>BaseArrayClass.&lt;ILatLng&gt;</code>
+    </td>
+    <td>
+      <p>.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="computeSignedArea" href="https://ionicframework.com/docs/native/google-maps/#computeSignedArea"></a><code>computeSignedArea(path)</code></h3>
+
+<p>Returns the signed area of a closed path. The signed area may be used to determine the orientation of the path.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      path</td>
+    <td>
+      <code>Array.&lt;ILatLng&gt;</code>|<code>BaseArrayClass.&lt;ILatLng&gt;</code>
+    </td>
+    <td>
+      <p>.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="computeHeading" href="https://ionicframework.com/docs/native/google-maps/#computeHeading"></a><code>computeHeading(from,&nbsp;to)</code></h3>
+
+<p>Returns the heading from one LatLng to another LatLng. Headings are expressed in degrees clockwise from North within the range (-180,180).</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      from</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      to</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="interpolate" href="https://ionicframework.com/docs/native/google-maps/#interpolate"></a><code>interpolate(from,&nbsp;to,&nbsp;fraction)</code></h3>
+
+<p>Returns the LatLng which lies the given fraction of the way between the origin LatLng and the destination LatLng.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      from</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      <p>The LatLng from which to start.</p>
+</td>
+  </tr>
+  
+  <tr>
+    <td>
+      to</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      <p>The LatLng toward which to travel.</p>
+</td>
+  </tr>
+  
+  <tr>
+    <td>
+      fraction</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>A fraction of the distance to travel from 0.0 to 1.0 .</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>LatLng</code></p>
+</div>
+
+<h2><a class="anchor" name="Poly" href="https://ionicframework.com/docs/native/google-maps/#Poly"></a>Poly</h2>
+<h2><a class="anchor" name="static-members" href="https://ionicframework.com/docs/native/google-maps/#static-members"></a>Static Members</h2>
+<h3><a class="anchor" name="containsLocation" href="https://ionicframework.com/docs/native/google-maps/#containsLocation"></a><code>containsLocation(location,&nbsp;path)</code></h3>
+
+<p>Returns true if the speicified location is in the polygon path</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      location</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      path</td>
+    <td>
+      <code>ILatLng[]</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+<h3><a class="anchor" name="isLocationOnEdge" href="https://ionicframework.com/docs/native/google-maps/#isLocationOnEdge"></a><code>isLocationOnEdge(location,&nbsp;path)</code></h3>
+
+<p>Returns true if the speicified location is on the polyline path</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      location</td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      path</td>
+    <td>
+      <code>ILatLng[]</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+
+<h2><a class="anchor" name="TileOverlay" href="https://ionicframework.com/docs/native/google-maps/#TileOverlay"></a>TileOverlay</h2>
+
+<h2><a class="anchor" name="instance-members" href="https://ionicframework.com/docs/native/google-maps/#instance-members"></a>Instance Members</h2>
+<h3><a class="anchor" name="getId" href="https://ionicframework.com/docs/native/google-maps/#getId"></a><code>getId()</code></h3>
+
+<p>Return the ID of instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>string</code></p>
+</div>
+<h3><a class="anchor" name="getMap" href="https://ionicframework.com/docs/native/google-maps/#getMap"></a><code>getMap()</code></h3>
+
+<p>Return the map instance.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>GoogleMap</code></p>
+</div>
+<h3><a class="anchor" name="setFadeIn" href="https://ionicframework.com/docs/native/google-maps/#setFadeIn"></a><code>setFadeIn(fadeIn)</code></h3>
+
+<p>Set whether the tiles should fade in.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      fadeIn</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getFadeIn" href="https://ionicframework.com/docs/native/google-maps/#getFadeIn"></a><code>getFadeIn()</code></h3>
+
+<p>Get whether the tiles should fade in</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+<h3><a class="anchor" name="setZIndex" href="https://ionicframework.com/docs/native/google-maps/#setZIndex"></a><code>setZIndex(zIndex)</code></h3>
+
+<p>Set the zIndex of the tile overlay</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      zIndex</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getZIndex" href="https://ionicframework.com/docs/native/google-maps/#getZIndex"></a><code>getZIndex()</code></h3>
+
+<p>Return the zIndex of the tile overlay</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="setOpacity" href="https://ionicframework.com/docs/native/google-maps/#setOpacity"></a><code>setOpacity(opacity)</code></h3>
+
+<p>Set the opacity of the tile overlay</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      opacity</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getOpacity" href="https://ionicframework.com/docs/native/google-maps/#getOpacity"></a><code>getOpacity()</code></h3>
+
+<p>Return the opacity of the tile overlay</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="setVisible" href="https://ionicframework.com/docs/native/google-maps/#setVisible"></a><code>setVisible(visible)</code></h3>
+
+<p>Set false if you want to hide</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      visible</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="getVisible" href="https://ionicframework.com/docs/native/google-maps/#getVisible"></a><code>getVisible()</code></h3>
+
+<p>Return true if the tile overlay is visible</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>boolean</code></p>
+</div>
+<h3><a class="anchor" name="getTileSize" href="https://ionicframework.com/docs/native/google-maps/#getTileSize"></a><code>getTileSize()</code></h3>
+
+<p>Get tile size</p>
+
+<h3><a class="anchor" name="remove" href="https://ionicframework.com/docs/native/google-maps/#remove"></a><code>remove()</code></h3>
+
+<p>Remove the tile overlay</p>
+
+<h2><a class="anchor" name="BaseClass" href="https://ionicframework.com/docs/native/google-maps/#BaseClass"></a>BaseClass</h2>
+
+<h2><a class="anchor" name="instance-members" href="https://ionicframework.com/docs/native/google-maps/#instance-members"></a>Instance Members</h2>
+<h3><a class="anchor" name="addEventListener" href="https://ionicframework.com/docs/native/google-maps/#addEventListener"></a><code>addEventListener()</code></h3>
+
+<p>Adds an event listener.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Observable&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="addListenerOnce" href="https://ionicframework.com/docs/native/google-maps/#addListenerOnce"></a><code>addListenerOnce()</code></h3>
+
+<p>Adds an event listener that works once.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="get" href="https://ionicframework.com/docs/native/google-maps/#get"></a><code>get(key)</code></h3>
+
+<p>Gets a value</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      key</td>
+    <td>
+      
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="set" href="https://ionicframework.com/docs/native/google-maps/#set"></a><code>set(key,&nbsp;value)</code></h3>
+
+<p>Sets a value</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      key</td>
+    <td>
+      
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      value</td>
+    <td>
+      
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="bindTo" href="https://ionicframework.com/docs/native/google-maps/#bindTo"></a><code>bindTo(key,&nbsp;target,&nbsp;targetKey?,&nbsp;noNotify?)</code></h3>
+
+<p>Bind a key to another object</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      key</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      target</td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      targetKey?</td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      noNotify?</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="on" href="https://ionicframework.com/docs/native/google-maps/#on"></a><code>on()</code></h3>
+
+<p>Listen to a map event.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Observable&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="one" href="https://ionicframework.com/docs/native/google-maps/#one"></a><code>one()</code></h3>
+
+<p>Listen to a map event only once.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="empty" href="https://ionicframework.com/docs/native/google-maps/#empty"></a><code>empty()</code></h3>
+
+<p>Clears all stored values</p>
+
+<h3><a class="anchor" name="trigger" href="https://ionicframework.com/docs/native/google-maps/#trigger"></a><code>trigger()</code></h3>
+
+<p>Dispatch event.</p>
+
+<h3><a class="anchor" name="destroy" href="https://ionicframework.com/docs/native/google-maps/#destroy"></a><code>destroy()</code></h3>
+
+<p>Executes off() and empty()</p>
+
+<h2><a class="anchor" name="BaseArrayClass" href="https://ionicframework.com/docs/native/google-maps/#BaseArrayClass"></a>BaseArrayClass</h2>
+
+<h2><a class="anchor" name="instance-members" href="https://ionicframework.com/docs/native/google-maps/#instance-members"></a>Instance Members</h2>
+<h3><a class="anchor" name="empty" href="https://ionicframework.com/docs/native/google-maps/#empty"></a><code>empty(noNotify?)</code></h3>
+
+<p>Removes all elements from the array.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      noNotify?</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true to prevent remove_at events.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="forEach" href="https://ionicframework.com/docs/native/google-maps/#forEach"></a><code>forEach(fn,&nbsp;callback?)</code></h3>
+
+<p>Iterate over each element, calling the provided callback.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      fn</td>
+    <td>
+      <code>Function</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      callback?</td>
+    <td>
+      <code>Function</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="forEachAsync" href="https://ionicframework.com/docs/native/google-maps/#forEachAsync"></a><code>forEachAsync(fn)</code></h3>
+
+<p>Iterate over each element, calling the provided callback.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      fn</td>
+    <td>
+      <code>Function</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code></p>
+</div>
+<h3><a class="anchor" name="map" href="https://ionicframework.com/docs/native/google-maps/#map"></a><code>map(fn,&nbsp;callback?)</code></h3>
+
+<p>Iterate over each element, then return a new value.
+Then you can get the results of each callback.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      fn</td>
+    <td>
+      <code>Function</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      callback?</td>
+    <td>
+      <code>Function</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Array&lt;Object&gt;</code> returns a new array with the results</p>
+</div>
+<h3><a class="anchor" name="mapAsync" href="https://ionicframework.com/docs/native/google-maps/#mapAsync"></a><code>mapAsync(fn,&nbsp;callback?)</code></h3>
+
+<p>Iterate over each element, calling the provided callback.
+Then you can get the results of each callback.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      fn</td>
+    <td>
+      <code>Function</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      callback?</td>
+    <td>
+      <code>Function</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code> returns a new array with the results</p>
+</div>
+<h3><a class="anchor" name="filter" href="https://ionicframework.com/docs/native/google-maps/#filter"></a><code>filter(fn,&nbsp;callback?)</code></h3>
+
+<p>The filter() method creates a new array with all elements that pass the test implemented by the provided function.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      fn</td>
+    <td>
+      <code>Function</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      callback?</td>
+    <td>
+      <code>Function</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Array&lt;Object&gt;</code> returns a new filtered array</p>
+</div>
+<h3><a class="anchor" name="filterAsync" href="https://ionicframework.com/docs/native/google-maps/#filterAsync"></a><code>filterAsync(fn,&nbsp;callback?)</code></h3>
+
+<p>The filterAsync() method creates a new array with all elements that pass the test implemented by the provided function.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      fn</td>
+    <td>
+      <code>Function</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      callback?</td>
+    <td>
+      <code>Function</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Promise&lt;any&gt;</code> returns a new filtered array</p>
+</div>
+<h3><a class="anchor" name="getArray" href="https://ionicframework.com/docs/native/google-maps/#getArray"></a><code>getArray()</code></h3>
+
+<p>Returns a reference to the underlying Array.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Array&lt;Object&gt;</code></p>
+</div>
+<h3><a class="anchor" name="getAt" href="https://ionicframework.com/docs/native/google-maps/#getAt"></a><code>getAt(index)</code></h3>
+
+<p>Returns the element at the specified index.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      index</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Object</code></p>
+</div>
+<h3><a class="anchor" name="getLength" href="https://ionicframework.com/docs/native/google-maps/#getLength"></a><code>getLength()</code></h3>
+
+<p>Returns the number of the elements.</p>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="indexOf" href="https://ionicframework.com/docs/native/google-maps/#indexOf"></a><code>indexOf(element)</code></h3>
+
+<p>The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      element</td>
+    <td>
+      <code>Object</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>number</code></p>
+</div>
+<h3><a class="anchor" name="reverse" href="https://ionicframework.com/docs/native/google-maps/#reverse"></a><code>reverse()</code></h3>
+
+<p>The reverse() method reverses an array in place.</p>
+
+<h3><a class="anchor" name="sort" href="https://ionicframework.com/docs/native/google-maps/#sort"></a><code>sort()</code></h3>
+
+<p>The sort() method sorts the elements of an array in place and returns the array.</p>
+
+<h3><a class="anchor" name="insertAt" href="https://ionicframework.com/docs/native/google-maps/#insertAt"></a><code>insertAt(index,&nbsp;element,&nbsp;noNotify?)</code></h3>
+
+<p>Inserts an element at the specified index.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      index</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      element</td>
+    <td>
+      <code>Object</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      noNotify?</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true to prevent insert_at events.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Object</code></p>
+</div>
+<h3><a class="anchor" name="pop" href="https://ionicframework.com/docs/native/google-maps/#pop"></a><code>pop(noNotify?)</code></h3>
+
+<p>Removes the last element of the array and returns that element.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      noNotify?</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true to prevent remove_at events.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="return-value">
+  <p><i class="icon ion-arrow-return-left"></i>
+  <b>Returns:</b> <code>Object</code></p>
+</div>
+<h3><a class="anchor" name="push" href="https://ionicframework.com/docs/native/google-maps/#push"></a><code>push(element,&nbsp;noNotify?)</code></h3>
+
+<p>Adds one element to the end of the array and returns the new length of the array.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      element</td>
+    <td>
+      <code>object</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      noNotify?</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true to prevent insert_at events.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="removeAt" href="https://ionicframework.com/docs/native/google-maps/#removeAt"></a><code>removeAt(index,&nbsp;noNotify?)</code></h3>
+
+<p>Removes an element from the specified index.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      index</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      noNotify?</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true to prevent insert_at events.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<h3><a class="anchor" name="setAt" href="https://ionicframework.com/docs/native/google-maps/#setAt"></a><code>setAt(index,&nbsp;element,&nbsp;noNotify?)</code></h3>
+
+<p>Sets an element at the specified index.</p>
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      index</td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      element</td>
+    <td>
+      <code>object</code>
+    </td>
+    <td>
+      </td>
+  </tr>
+  
+  <tr>
+    <td>
+      noNotify?</td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true to prevent set_at events.</p>
+</td>
+  </tr>
+  </tbody>
+</table>
+
+<h2><a class="anchor" name="GoogleMapOptions" href="https://ionicframework.com/docs/native/google-maps/#GoogleMapOptions"></a>GoogleMapOptions</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      mapType
+    </td>
+    <td>
+      <code>MapType</code>
+    </td>
+    <td>
+      <p>MapType</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      controls
+    </td>
+    <td>
+      <code>*/
+    zoom?: boolean;
+  }</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      gestures
+    </td>
+    <td>
+      <code>{
+
+    /**
+     * Set false to disable the scroll gesture (default: true)
+     */
+    scroll?: boolean;
+
+    /**
+     * Set false to disable the tilt gesture (default: true)
+     */
+    tilt?: boolean;
+
+    /**
+     * Set false to disable the zoom gesture (default: true)
+     */
+    zoom?: boolean;
+
+    /**
+     * Set false to disable the rotate gesture (default: true)
+     */
+    rotate?: boolean;
+  }</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      styles
+    </td>
+    <td>
+      <code>any[]</code>
+    </td>
+    <td>
+      <p>Map styles</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      camera
+    </td>
+    <td>
+      <code>CameraPosition&lt;any&gt;</code>
+    </td>
+    <td>
+      <p>Initial camera position</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      preferences
+    </td>
+    <td>
+      <code>*/
+    building?: boolean
+  }</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+<h2><a class="anchor" name="CameraPosition" href="https://ionicframework.com/docs/native/google-maps/#CameraPosition"></a>CameraPosition</h2>
+
+
+  
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+<h2><a class="anchor" name="CircleOptions" href="https://ionicframework.com/docs/native/google-maps/#CircleOptions"></a>CircleOptions</h2><table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      target
+    </td>
+    <td>
+      <code>T</code>
+    </td>
+    <td>
+      <p>The center location of the camera view.</p>
+<p>[usage 1]</p>
+<p>let cameraPos: CameraPosition<ilatlng> = {
+  target: {lat: ..., lng: ...},
+  zoom: 10
+}&lt;/p&gt;
+</ilatlng></p><p>[usage 2] The zoom property is ignored when you specify multiple position</p>
+<p>let cameraPos: CameraPosition&lt;ILatLng[]&gt; = {
+  target: [
+     {lat: ..., lng: ...},
+     {lat: ..., lng: ...},
+     {lat: ..., lng: ...}
+  ]
+}</p>
+
+      <em>(optional)</em>
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  </td></tr><tr>
+    <td>
+      tilt
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>View angle</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      zoom
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Zoom level</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      bearing
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Map orientation</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      duration
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>The duration of animation in milliseconds</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      padding
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Camera padding in pixel</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+
+</tbody></table><table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      center
+    </td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      <p>Center position of circle</p>
+
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      radius
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Radius of circle in meter</p>
+
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      strokeColor
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      <p>Set the stroke color
+(rgb, rgba, #RRGGBB, "colorname", ...etc)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      strokeWidth
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Set the stroke width in pixel</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      fillColor
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      <p>Set the inside color of polygon
+(rgb, rgba, #RRGGBB, "colorname", ...etc)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      clickable
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set to true to receive the CIRCLE_CLICK event
+(default: false)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      visible
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set to false to hide</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      zIndex
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Z-index</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+<h2><a class="anchor" name="GeocoderRequest" href="https://ionicframework.com/docs/native/google-maps/#GeocoderRequest"></a>GeocoderRequest</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      address
+    </td>
+    <td>
+      <code>string | string[]</code>
+    </td>
+    <td>
+      <p>The address property or position property is required.
+You can not specify both property at the same time.</p>
+<p>[geocoding usage1]
+let request: GeocoderRequest = {
+  address: "Los Angeles, California, USA"
+};</p>
+<p>[geocoding usage2]
+let request: GeocoderRequest = {
+  address: [
+   "Los Angeles, California, USA",
+   "San Francisco, California, USA",
+  ]
+};</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      position
+    </td>
+    <td>
+      <code>ILatLng | ILatLng[]</code>
+    </td>
+    <td>
+      <p>[reverse-geocoding usage1]
+let request: GeocoderRequest = {
+  position: {"lat": 37.421655, "lng": -122.085637}
+};</p>
+<p>[reverse-geocoding usage2]
+let request: GeocoderRequest = {
+  address: [
+   {"lat": 37.421655, "lng": -122.085637},
+   {"lat": 37.332, "lng": -122.030781}
+  ]
+};</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+<h2><a class="anchor" name="GeocoderResult" href="https://ionicframework.com/docs/native/google-maps/#GeocoderResult"></a>GeocoderResult</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      adminArea
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      country
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      countryCode
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      extra
+    </td>
+    <td>
+      <code>{
+    featureName?: string;
+    lines?: Array&lt;string&gt;;
+    permises?: string;
+    phone?: string;
+    url?: string
+  }</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      locale
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      locality
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      position
+    </td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      postalCode
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      subAdminArea
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      subLocality
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      subThoroughfare
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      thoroughfare
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+<h2><a class="anchor" name="GroundOverlayOptions" href="https://ionicframework.com/docs/native/google-maps/#GroundOverlayOptions"></a>GroundOverlayOptions</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      url
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      <p>URL of overlay</p>
+
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      bounds
+    </td>
+    <td>
+      <code>Array&lt;ILatLng&gt;</code>
+    </td>
+    <td>
+      <p>Bounds, array of ILatLng</p>
+
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      clickable
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set to true to receive the GROUND_OVERLAY_CLICK event
+(default: false)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      visible
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set to false to hide</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      opacity
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Opacity. From 0.0 to 1.0 .</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      bearing
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Bearing</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      zIndex
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Z-index</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+<h2><a class="anchor" name="ILatLng" href="https://ionicframework.com/docs/native/google-maps/#ILatLng"></a>ILatLng</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      lat
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      lng
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+<h2><a class="anchor" name="MarkerIcon" href="https://ionicframework.com/docs/native/google-maps/#MarkerIcon"></a>MarkerIcon</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      url
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      size
+    </td>
+    <td>
+      <code>{
+    width?: number;
+    height?: number;
+  }</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+<h2><a class="anchor" name="MarkerOptions" href="https://ionicframework.com/docs/native/google-maps/#MarkerOptions"></a>MarkerOptions</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      icon
+    </td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      <p>The icon image url or properties. Also you can specify HTML Color values. Alternatively you can specify the image as Base64</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      title
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      <p>The content of the infoWindow.</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      snippet
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      <p>The snippet of the infoWindow.</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      position
+    </td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      <p>The position of the marker.</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      infoWindowAnchor
+    </td>
+    <td>
+      <code>number[]</code>
+    </td>
+    <td>
+      <p>Specify the anchor of the InfoWindow</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      draggable
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true if you want to enable to drag the marker. (Default: false) Important! Drag starts after long pressed on the marker.</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      flat
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true if you want to use a flat marker. (Default: false)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      rotation
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Set rotation angle. (Default: 0)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      visible
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set false if you want to hide. (Default: true)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      styles
+    </td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      <p>Specify the options for title. This property work for normal InfoWindow.</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      animation
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      <p>Which animation to play when marker is added to a map.</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      zIndex
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Higher zIndex value overlays will be drawn on top of lower zIndex value tile layers and overlays.</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      disableAutoPan
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set to true to disable auto panning when the marker is clicked.</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+<h2><a class="anchor" name="MarkerClusterIcon" href="https://ionicframework.com/docs/native/google-maps/#MarkerClusterIcon"></a>MarkerClusterIcon</h2>
+
+
+<h2><a class="anchor" name="MarkerClusterOptions" href="https://ionicframework.com/docs/native/google-maps/#MarkerClusterOptions"></a>MarkerClusterOptions</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      maxZoomLevel
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Maximum zoom level of clustering
+(default: 15, max: 18)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      boundsDraw
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Draw a rectangle that contains all locations of clustered when you tap on a clister marker.
+(default: true)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      markers
+    </td>
+    <td>
+      <code>MarkerOptions[]</code>
+    </td>
+    <td>
+      <p>Position list
+[
+  {title: "store A", position: {lat: ..., lng: ...}},
+  {title: "store B", position: {lat: ..., lng: ...}},
+  {title: "store C", position: {lat: ..., lng: ...}}
+]</p>
+
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      icons
+    </td>
+    <td>
+      <code>any[]</code>
+    </td>
+    <td>
+      <p>Conditions of clustering
+[
+  {icon: "assets/small.png", min: 2, max: 10},
+  {icon: "assets/middle.png", min: 11, max: 30},
+  {icon: "assets/large.png", min: 31},
+]</p>
+
+      
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+<h2><a class="anchor" name="MyLocation" href="https://ionicframework.com/docs/native/google-maps/#MyLocation"></a>MyLocation</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      latLng
+    </td>
+    <td>
+      <code>LatLng</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      elapsedRealtimeNanos
+    </td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      time
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      accuracy
+    </td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      bearing
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      altitude
+    </td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      speed
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      provider
+    </td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      hashCode
+    </td>
+    <td>
+      <code>any</code>
+    </td>
+    <td>
+      
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+<h2><a class="anchor" name="MyLocationOptions" href="https://ionicframework.com/docs/native/google-maps/#MyLocationOptions"></a>MyLocationOptions</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      enableHighAccuracy
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true if you want to try to use GPS mandatory.
+(In false, the plugin try to use GPS and network)
+(default: false)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+<h2><a class="anchor" name="PolygonOptions" href="https://ionicframework.com/docs/native/google-maps/#PolygonOptions"></a>PolygonOptions</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      points
+    </td>
+    <td>
+      <code>Array&lt;ILatLng&gt;</code>
+    </td>
+    <td>
+      <p>Pass ILatLng[] to specify the vertixes.
+You need to contain two points at least.</p>
+
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      geodesic
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true if you want to draw the curve polygon based on the earth
+(default: false)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      strokeColor
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      <p>Set the stroke color
+(rgb, rgba, #RRGGBB, "colorname", ...etc)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      strokeWidth
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Set the stroke width in pixel</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      fillColor
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      <p>Set the inside color of polygon
+(rgb, rgba, #RRGGBB, "colorname", ...etc)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      visible
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set false if you want to create invisible polygon
+(Invisible polygon is not clickable, default true)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      zIndex
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Hierarchy z-index</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      addHole
+    </td>
+    <td>
+      <code>Array&lt;Array&lt;ILatLng&gt;&gt;</code>
+    </td>
+    <td>
+      <p>Pass ILatLng[][] to create holes in polygon</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      clickable
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true if you want to receive the POLYGON_CLICK event
+(default: false)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+<h2><a class="anchor" name="PolylineOptions" href="https://ionicframework.com/docs/native/google-maps/#PolylineOptions"></a>PolylineOptions</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      points
+    </td>
+    <td>
+      <code>Array&lt;ILatLng&gt;</code>
+    </td>
+    <td>
+      <p>Pass ILatLng[] to specify the vertixes.
+You need to contain two points at least.</p>
+
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      visible
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set false if you want to create invisible polyline
+(Invisible polyline is not clickable, default true)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      geodesic
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true if you want to draw the curve polyline based on the earth
+(default: false)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      color
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      <p>Set the stroke color
+(rgb, rgba, #RRGGBB, "colorname", ...etc)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      width
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Set the stroke width in pixel</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      zIndex
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Hierarchy z-index</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      clickable
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true if you want to receive the POLYLINE_CLICK event
+(default: false)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+<h2><a class="anchor" name="TileOverlayOptions" href="https://ionicframework.com/docs/native/google-maps/#TileOverlayOptions"></a>TileOverlayOptions</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      getTile
+    </td>
+    <td>
+      <code>(x: number, y: number, zoom: number) =&gt; string</code>
+    </td>
+    <td>
+      <p>This callback must return string of image URL.
+If no tile, you need to return null.</p>
+
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      visible
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set false if you want to create invisible tilelayer
+(default true)</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      zIndex
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Hierarchy z-index of tilelayer</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      tileSize
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Default: 512px</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      opacity
+    </td>
+    <td>
+      <code>number</code>
+    </td>
+    <td>
+      <p>Default: 1.0</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      debug
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Set true if you want to display the tile information over the tile images.</p>
+
+      <em>(optional)</em>
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+<h2><a class="anchor" name="VisibleRegion" href="https://ionicframework.com/docs/native/google-maps/#VisibleRegion"></a>VisibleRegion</h2>
+
+<table class="table param-table" style="margin:0;">
+  <thead>
+  <tr>
+    <th>Param</th>
+    <th>Type</th>
+    <th>Details</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+    <td>
+      northeast
+    </td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      southwest
+    </td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      farLeft
+    </td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      farRight
+    </td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      nearLeft
+    </td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      nearRight
+    </td>
+    <td>
+      <code>ILatLng</code>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      type
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      toString
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      <p>Converts to string</p>
+
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      toUrlValue
+    </td>
+    <td>
+      <code>string</code>
+    </td>
+    <td>
+      <p>Returns a string of the form "lat_sw,lng_sw,lat_ne,lng_ne" for this bounds, where "sw" corresponds to the southwest corner of the bounding box, while "ne" corresponds to the northeast corner of that box.</p>
+
+      
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      contains
+    </td>
+    <td>
+      <code>boolean</code>
+    </td>
+    <td>
+      <p>Returns true if the given lat/lng is in this bounds.</p>
+
+      
+    </td>
+  </tr>
+  
+  </tbody>
+</table>
+
+
+
+
+
+<p></p>
+
+  </main>
+  
+</div>
+
+
+    
+
+    
+
+    
+
+    <div id="search-results">
+      <div id="results-api">
+        <h3>API</h3>
+        <ul></ul>
+      </div>
+      <div id="results-native">
+        <h3>Native</h3>
+        <ul></ul>
+      </div>
+      <div id="results-other">
+        <h3>General</h3>
+        <ul></ul>
+      </div>
+    </div>
+    <script async="" src="./Ionic Native - Google Maps_files/gtm.js"></script><script src="./Ionic Native - Google Maps_files/ionic-site.min.js"></script>
+<script type="text/javascript">
+  (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent".split(" "), 0);
+
+  // For the DevApp
+  branch.init('key_live_egwSa60sfZm1rIZp7QRMofjdFrjBL1M1', function(err, data) {
+      // callback to handle err or data
+  });
+</script>
+
+
+
+  
+
+<script type="text/javascript" id="">var _kmq=_kmq||[],_kmk=_kmk||"3af7413247f5067b13df320689ad04c045f97e14";function _kms(c){setTimeout(function(){var a=document,b=a.getElementsByTagName("script")[0];a=a.createElement("script");a.type="text/javascript";a.async=!0;a.src=c;b.parentNode.insertBefore(a,b)},1)}_kms("//i.kissmetrics.com/i.js");_kms("//scripts.kissmetrics.com/"+_kmk+".2.js");</script></body></html>
